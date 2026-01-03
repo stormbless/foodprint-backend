@@ -1,109 +1,109 @@
 # This file contains all data for the mysql table named Food
 #
-#| Field          | Type         | Null | Key | Default | Extra          |
-#+----------------+--------------+------+-----+---------+----------------+
-#| food_id        | int unsigned | NO   | PRI | NULL    | auto_increment |
-#| name           | varchar(100) | NO   |     | NULL    |                |
-#| category       | varchar(100) | NO   |     | NULL    |                |
-#| emissions      | decimal(6,2) | NO   |     | NULL    |                |
-#| water_use      | decimal(6,2) | NO   |     | NULL    |                |
-#| land_use       | decimal(6,2) | NO   |     | NULL    |                |
-#| eutrophication | decimal(6,2) | NO   |     | NULL    |                |
-#+----------------+--------------+------+-----+---------+----------------+
+#+----------------+--------------+------+-----+---------+-------+
+#| Field          | Type         | Null | Key | Default | Extra |
+#+----------------+--------------+------+-----+---------+-------+
+#| food_id        | int unsigned | NO   | PRI | NULL    |       |
+#| name           | varchar(100) | NO   |     | NULL    |       |
+#| category       | varchar(100) | NO   |     | NULL    |       |
+#| emissions      | decimal(6,2) | NO   |     | NULL    |       |
+#| water_use      | decimal(6,2) | NO   |     | NULL    |       |
+#| land_use       | decimal(6,2) | NO   |     | NULL    |       |
+#| eutrophication | decimal(6,2) | NO   |     | NULL    |       |
+#+----------------+--------------+------+-----+---------+-------+
 #
 # It is used to initialize the Food data
-# format: name,category,emissions (CO2 eq / kg),water_use (L / kg),land_use (m2 / kg),eutrophication (PO4 eq / kg)
-# Entity,Category,Emissions,Water Use,Land Use,Eutrophication
-Ale,Alcohol,0.49,49.4,0.81,1.63
-Almond butter,Butter and Alternatives,0.39,6846.47,7.68,18.72
-Almond milk,Milk and Alternatives,0.66,1246.97,1.37,4.15
-Almonds,Protein Foods,0.6,6413.31,8.23,18.6
-Apple juice,Beverages,0.46,122.32,0.66,1.91
-Apples,Fruit,0.51,90.33,0.67,1.21
-Asparagus,Vegetables,0.93,310.51,1.4,4
-Avocados,Vegetables,0.92,367.41,1.25,2.67
-Bacon,Protein Foods,19.31,1649.71,42.33,87.75
-Bananas,Fruit,0.87,52.05,2.64,3.46
-Beans,Protein Foods,1.37,0.08,17.07,10.77
-Beef,Protein Foods,95.03,2493.95,295.25,428.69
-Beer,Alcohol,0.69,122.42,0.83,2.82
-Beetroot,Vegetables,2.66,11.21,4.09,8.86
-Brazil nuts,Protein Foods,2.51,3270.8,12.81,19.62
-Bread,Grains,0.88,241.91,2.24,6.02
-Breakfast cereal,Grains,1.49,502.1,2.9,9.51
-Broccoli,Vegetables,0.9,224.9,1,5.1
-Butter,Butter and Alternatives,3.32,271.56,3.62,10.51
-Cabbage,Vegetables,0.89,131.31,0.8,6.2
-Capsicum,Vegetables,0.92,362.93,1.24,2.67
-Carrots,Vegetables,0.94,14.93,1.6,5.89
-Cashews,Protein Foods,2.09,3504.34,11.72,19.29
-Cauliflower,Vegetables,0.89,136.94,0.79,5.94
-Cereal bars,Grains,2.85,843.37,5.56,13.81
-Cheese,Dairy and Alternatives,23.88,5605.2,87.79,98.37
-Chia seeds,Protein Foods,1.22,210.9,3.43,5.99
-Chicken,Protein Foods,9.27,563.92,9.22,37.36
-Chickpeas,Protein Foods,1.34,161.39,15.57,9.68
-Cider,Alcohol,1.08,242.71,0.91,3.19
-Coconut milk,Milk and Alternatives,3.32,217.23,0.55,2.12
-Coconut oil,Oil,0.53,345.99,0.73,6.51
-Coffee,Beverages,28.53,25.9,21.62,110.52
-Corn,Vegetables,0.97,157.24,2.08,4.07
-Couscous,Grains,1.16,333.85,2.95,6.15
-Cow's milk,Milk and Alternatives,3.7,309.77,4.07,11.47
-Cracker biscuits,Snacks,2.45,787.92,4.46,14
-Crisps,Snacks,3.03,420.95,7.53,32.29
-Cucumber,Vegetables,0.85,318.78,1.08,2.51
-Dairy-free cheese,Dairy and Alternatives,1.98,1416.95,4.21,11.73
-Dairy-free ice cream,Deserts,2.45,407.9,3.49,8.9
-Dark chocolate,Deserts,20.62,301.49,48.79,41.64
-Eggs,Protein Foods,4.44,830.03,6.82,19.98
-Fish,Protein Foods,13.63,3691.3,8.41,235.12
-Fruit smoothies,Beverages,1.65,172.43,1.29,3.67
-Grapes,Fruit,8.28,46.55,1.54,4.93
-Ice cream,Deserts,3.66,463.34,5.29,12.55
-Kale,Vegetables,0.9,133.35,0.81,6.33
-Kiwis,Fruit,1.61,726.69,1.07,13.2
-Lamb,Protein Foods,30.74,88.01,43.42,23.41
-Lemons,Fruit,0.47,123.26,0.61,1.62
-Lentils,Protein Foods,2.54,14.31,27.47,27.73
-Lettuce,Vegetables,4.93,294.99,6.78,5.12
-Milk chocolate,Deserts,10.8,551.85,17.27,26.79
-Muesli,Grains,2.27,343.18,3.95,10.51
-Mushrooms,Vegetables,2.35,1459.08,2.87,13.4
-Oat milk,Milk and Alternatives,0.45,14.49,0.53,1.43
-Oats,Grains,2.48,482.4,7.6,11.23
-Olive oil,Oil,5.18,1411.24,21.71,34.26
-Onions,Vegetables,0.36,53.86,0.4,1.54
-Orange juice,Beverages,0.49,142.69,0.71,2.18
-Oranges,Fruit,0.47,115.54,0.67,1.6
-Pasta,Grains,1.63,614.16,3.74,11.14
-Peanut butter,Butter and Alternatives,3.43,2618.92,8.69,14.59
-Peanuts,Protein Foods,3.15,2169.65,8.31,16.73
-Pears,Fruit,0.93,783.35,1.01,13.83
-Peas,Vegetables,1,346.79,6.61,12.43
-Pecan nuts,Protein Foods,2.52,3046.98,11.73,19.34
-Pineapple,Fruit,0.93,793.04,1.02,14
-Pork,Protein Foods,12.16,1642.01,17.31,76
-Potatoes,Vegetables,0.21,80.81,0.8,1.44
-Prawns,Protein Foods,20.91,3197.15,1.02,154.77
-Protein bar,Protein Foods,3.37,1423.92,11.13,12.17
-Protein shake,Protein Foods,1.74,322.9,5.64,7.09
-Pumpkin seeds,Protein Foods,1.32,212.61,3.34,5.71
-Quinoa,Grains,1.14,210.35,3.23,5.67
-Raspberries,Fruit,8.37,45.71,1.54,4.96
-Rice,Grains,3.93,2114.44,2.94,26.45
-Rice noodles,Grains,3.41,1869.56,2.49,22.4
-Soy milk,Milk and Alternatives,0.89,50.48,0.87,2.75
-Soy yoghurt,Dairy and Alternatives,0.5,196.37,1.02,3.6
-Spinach,Vegetables,1.01,269.96,0.99,2.57
-Strawberries,Fruit,3.24,349.2,3.45,3.83
-Strawberry jam,Deserts,2.6,949.7,2.97,13.65
-Sunflower oil,Oil,3.66,23.19,19.46,88.06
-Sunflower seeds,Protein Foods,1.93,14.26,10.98,49.43
-Tea,Beverages,17.62,62.44,23.66,66.71
-Tofu,Protein Foods,1.02,31.18,3.03,5.55
-Tomatoes,Vegetables,2.27,291.67,0.89,6.02
-Walnuts,Protein Foods,2.42,3458.07,11.88,18.74
-Watermelon,Fruit,0.97,743.31,1.01,13.12
-Wine,Alcohol,1.72,93.54,4.33,4.64
-Yoghurt,Dairy and Alternatives,3.11,311.75,3.21,9.96
+# format: food_id,name,category,emissions (CO2 eq / kg),water_use (L / kg),land_use (m2 / kg),eutrophication (PO4 eq / kg)
+1,Ale,Alcohol,0.49,49.4,0.81,1.63
+2,Almond butter,Butter and Alternatives,0.39,6846.47,7.68,18.72
+3,Almond milk,Milk and Alternatives,0.66,1246.97,1.37,4.15
+4,Almonds,Protein Foods,0.6,6413.31,8.23,18.6
+5,Apple juice,Beverages,0.46,122.32,0.66,1.91
+6,Apples,Fruit,0.51,90.33,0.67,1.21
+7,Asparagus,Vegetables,0.93,310.51,1.4,4
+8,Avocados,Vegetables,0.92,367.41,1.25,2.67
+9,Bacon,Protein Foods,19.31,1649.71,42.33,87.75
+10,Bananas,Fruit,0.87,52.05,2.64,3.46
+11,Beans,Protein Foods,1.37,0.08,17.07,10.77
+12,Beef,Protein Foods,95.03,2493.95,295.25,428.69
+13,Beer,Alcohol,0.69,122.42,0.83,2.82
+14,Beetroot,Vegetables,2.66,11.21,4.09,8.86
+15,Brazil nuts,Protein Foods,2.51,3270.8,12.81,19.62
+16,Bread,Grains,0.88,241.91,2.24,6.02
+17,Breakfast cereal,Grains,1.49,502.1,2.9,9.51
+18,Broccoli,Vegetables,0.9,224.9,1,5.1
+19,Butter,Butter and Alternatives,3.32,271.56,3.62,10.51
+20,Cabbage,Vegetables,0.89,131.31,0.8,6.2
+21,Capsicum,Vegetables,0.92,362.93,1.24,2.67
+22,Carrots,Vegetables,0.94,14.93,1.6,5.89
+23,Cashews,Protein Foods,2.09,3504.34,11.72,19.29
+24,Cauliflower,Vegetables,0.89,136.94,0.79,5.94
+25,Cereal bars,Grains,2.85,843.37,5.56,13.81
+26,Cheese,Dairy and Alternatives,23.88,5605.2,87.79,98.37
+27,Chia seeds,Protein Foods,1.22,210.9,3.43,5.99
+28,Chicken,Protein Foods,9.27,563.92,9.22,37.36
+29,Chickpeas,Protein Foods,1.34,161.39,15.57,9.68
+30,Cider,Alcohol,1.08,242.71,0.91,3.19
+31,Coconut milk,Milk and Alternatives,3.32,217.23,0.55,2.12
+32,Coconut oil,Oil,0.53,345.99,0.73,6.51
+33,Coffee,Beverages,28.53,25.9,21.62,110.52
+34,Corn,Vegetables,0.97,157.24,2.08,4.07
+35,Couscous,Grains,1.16,333.85,2.95,6.15
+36,Cow's milk,Milk and Alternatives,3.7,309.77,4.07,11.47
+37,Cracker biscuits,Snacks,2.45,787.92,4.46,14
+38,Crisps,Snacks,3.03,420.95,7.53,32.29
+39,Cucumber,Vegetables,0.85,318.78,1.08,2.51
+40,Dairy-free cheese,Dairy and Alternatives,1.98,1416.95,4.21,11.73
+41,Dairy-free ice cream,Deserts,2.45,407.9,3.49,8.9
+42,Dark chocolate,Deserts,20.62,301.49,48.79,41.64
+43,Eggs,Protein Foods,4.44,830.03,6.82,19.98
+44,Fish,Protein Foods,13.63,3691.3,8.41,235.12
+45,Fruit smoothies,Beverages,1.65,172.43,1.29,3.67
+46,Grapes,Fruit,8.28,46.55,1.54,4.93
+47,Ice cream,Deserts,3.66,463.34,5.29,12.55
+48,Kale,Vegetables,0.9,133.35,0.81,6.33
+49,Kiwis,Fruit,1.61,726.69,1.07,13.2
+50,Lamb,Protein Foods,30.74,88.01,43.42,23.41
+51,Lemons,Fruit,0.47,123.26,0.61,1.62
+52,Lentils,Protein Foods,2.54,14.31,27.47,27.73
+53,Lettuce,Vegetables,4.93,294.99,6.78,5.12
+54,Milk chocolate,Deserts,10.8,551.85,17.27,26.79
+55,Muesli,Grains,2.27,343.18,3.95,10.51
+56,Mushrooms,Vegetables,2.35,1459.08,2.87,13.4
+57,Oat milk,Milk and Alternatives,0.45,14.49,0.53,1.43
+58,Oats,Grains,2.48,482.4,7.6,11.23
+59,Olive oil,Oil,5.18,1411.24,21.71,34.26
+60,Onions,Vegetables,0.36,53.86,0.4,1.54
+61,Orange juice,Beverages,0.49,142.69,0.71,2.18
+62,Oranges,Fruit,0.47,115.54,0.67,1.6
+63,Pasta,Grains,1.63,614.16,3.74,11.14
+64,Peanut butter,Butter and Alternatives,3.43,2618.92,8.69,14.59
+65,Peanuts,Protein Foods,3.15,2169.65,8.31,16.73
+66,Pears,Fruit,0.93,783.35,1.01,13.83
+67,Peas,Vegetables,1,346.79,6.61,12.43
+68,Pecan nuts,Protein Foods,2.52,3046.98,11.73,19.34
+69,Pineapple,Fruit,0.93,793.04,1.02,14
+70,Pork,Protein Foods,12.16,1642.01,17.31,76
+71,Potatoes,Vegetables,0.21,80.81,0.8,1.44
+72,Prawns,Protein Foods,20.91,3197.15,1.02,154.77
+73,Protein bar,Protein Foods,3.37,1423.92,11.13,12.17
+74,Protein shake,Protein Foods,1.74,322.9,5.64,7.09
+75,Pumpkin seeds,Protein Foods,1.32,212.61,3.34,5.71
+76,Quinoa,Grains,1.14,210.35,3.23,5.67
+77,Raspberries,Fruit,8.37,45.71,1.54,4.96
+78,Rice,Grains,3.93,2114.44,2.94,26.45
+79,Rice noodles,Grains,3.41,1869.56,2.49,22.4
+80,Soy milk,Milk and Alternatives,0.89,50.48,0.87,2.75
+81,Soy yoghurt,Dairy and Alternatives,0.5,196.37,1.02,3.6
+82,Spinach,Vegetables,1.01,269.96,0.99,2.57
+83,Strawberries,Fruit,3.24,349.2,3.45,3.83
+84,Strawberry jam,Deserts,2.6,949.7,2.97,13.65
+85,Sunflower oil,Oil,3.66,23.19,19.46,88.06
+86,Sunflower seeds,Protein Foods,1.93,14.26,10.98,49.43
+87,Tea,Beverages,17.62,62.44,23.66,66.71
+88,Tofu,Protein Foods,1.02,31.18,3.03,5.55
+89,Tomatoes,Vegetables,2.27,291.67,0.89,6.02
+90,Walnuts,Protein Foods,2.42,3458.07,11.88,18.74
+91,Watermelon,Fruit,0.97,743.31,1.01,13.12
+92,Wine,Alcohol,1.72,93.54,4.33,4.64
+93,Yoghurt,Dairy and Alternatives,3.11,311.75,3.21,9.96

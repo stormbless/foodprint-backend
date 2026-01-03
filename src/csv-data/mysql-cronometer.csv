@@ -13,570 +13,570 @@
 # food_id is the a foreign key to Food
 # food_name is not an actual column, just for clarity
 # format: cronometer_food_name|food_id|food_name
-Ale|636|Ale
-Almond Butter, Unsalted|637|Almond butter
-Almond Butter, Salted|637|Almond butter
-Almond Milk, Plain, Original, Unsweetened|638|Almond milk
-Almond Milk, Plain, Original, Sweetened|638|Almond milk
-Almond milk, plain or original, unsweetened, refrigerated|638|Almond milk
-Almond Breeze Almond Milk Original|638|Almond milk
-Almond Breeze Almond Milk Original Unsweetened|638|Almond milk
-Silk Almond Milk Original|638|Almond milk
-Silk Almond Milk Unsweet|638|Almond milk
-Silk Almond Milk Organic Original|638|Almond milk
-Almonds, Raw|639|Almonds
-Almonds, Blanched|639|Almonds
-Almonds, Dry Roasted, Salted|639|Almonds
-Almonds, Dry Roasted, Unsalted|639|Almonds
-Apple Juice or Cider, Not Fortified|640|Apple juice
-Apple Juice or Cider, Fortified with Vitamin C|640|Apple juice
-Apple Juice or Cider, Fortified with Vitamin C and Calcium|640|Apple juice
-Apple & Eve, Apple Juice|640|Apple juice
-Arby's apple juice|640|Apple juice
-Appletiser, Apple Juice|640|Apple juice
-Apple & Eve, 100% Juice, Apple|640|Apple juice
-Gerber, Apple Juice|640|Apple juice
-Apple & Eve, 100% Juice, Apple Juice|640|Apple juice
-Applebee's, Kid's Apple Juice|640|Apple juice
-Apple, Fresh, Without Skin|641|Apples
-Apple, Dried, Uncooked|641|Apples
-Apple, Canned, Unsweetened|641|Apples
-Apples, Raw, Gala, with Skin|641|Apples
-Rose Apple, Fresh|641|Apples
-Mammy Apple, Fresh|641|Apples
-Apples, Raw, Fuji, with Skin|641|Apples
-Apples, Raw, Granny Smith, with Skin|641|Apples
-Apples, Raw, with Skin|641|Apples
-Asparagus, Cooked from Fresh|642|Asparagus
-Asparagus, Raw|642|Asparagus
-Asparagus, Cooked, Boiled, Drained|642|Asparagus
-HEB, Asparagus|642|Asparagus
-Asda, Asparagus|642|Asparagus
-Coop, Asparagus|642|Asparagus
-Lidl, Asparagus|642|Asparagus
-Alter, Asparagus|642|Asparagus
-Tesco, Asparagus|642|Asparagus
-Asda, Asparagus Tips|642|Asparagus
-Coop, Asparagus Tips|642|Asparagus
-Majesty, Asparagus|642|Asparagus
-Oaklands, Asparagus|642|Asparagus
-Waitrose, Asparagus|642|Asparagus
-Tesco, Asparagus Tips|642|Asparagus
-Coles, Asparagus Spears|642|Asparagus
-Avocado, Black Skin|643|Avocados
-Avocado, green skin|643|Avocados
-Avocados, Raw, All Commercial Varieties|643|Avocados
-Avocados, Raw, California|643|Avocados
-Avocados, Raw, Florida|643|Avocados
-Bacon, Pork|644|Bacon
-Bananas, Raw|645|Bananas
-Banana, Fried|645|Bananas
-Black Beans, Canned, Drained|646|Beans
-Beans, Black, Mature seeds, Cooked, Boiled without Salt|646|Beans
-Beef Steak, Sirloin, No Visible Fat Eaten|647|Beef
-Beef Steak, Sirloin, Visible Fat Eaten|647|Beef
-Hamburger or Ground Beef, 80% Lean|647|Beef
-Beer|648|Beer
-Beer, Low Carb|648|Beer
-Beer, 7.7% Alcohol|648|Beer
-Beer, Non Alcoholic|648|Beer
-Beer, Low Alcohol|648|Beer
-Light Beer|648|Beer
-Light Beer, 7.7% Alcohol|648|Beer
-Beetroot, Raw|649|Beetroot
-G's, Beetroot|649|Beetroot
-Rewe, Beetroot|649|Beetroot
-Hak, Beetroot|649|Beetroot
-Droga, Beetroot|649|Beetroot
-Beauvais, Beetroot|649|Beetroot
-BTG, Red Beetroot|649|Beetroot
-Gut Bio, Beetroot|649|Beetroot
-Hak, Beetroot Sticks|649|Beetroot
-Oak, Beetroot Slices|649|Beetroot
-Coles, Beetroot, Diced|649|Beetroot
-Alnatura, Beetroot|649|Beetroot
-Edgell, Beetroot, Sliced|649|Beetroot
-Coop, Cooked Beetroot|649|Beetroot
-Pams, Sliced Beetroot|649|Beetroot
-Dm Bio, Beetroot, Sliced|649|Beetroot
-Bio Bio, Beetroot, Cooked|649|Beetroot
-Tesco, Cooked Beetroot|649|Beetroot
-Yumi's, Roasted Beetroot|649|Beetroot
-Brookerpaks, Beetroot|649|Beetroot
-Chef, Sliced Beetroot|649|Beetroot
-Coles, Sliced Beetroot|649|Beetroot
-Brazil Nuts, Unsalted|650|Brazil nuts
-Brazil Nuts, Salted|650|Brazil nuts
-Nuts, Brazil Nuts, Dried, Unblanched|650|Brazil nuts
-Ja!, Brazil Nuts|650|Brazil nuts
-HEB, Brazil Nuts|650|Brazil nuts
-Pams, Brazil Nuts|650|Brazil nuts
-Pams, Brazil Nuts|650|Brazil nuts
-Nuttini, Brazil Nuts|650|Brazil nuts
-Asda, Brazil Nuts|650|Brazil nuts
-Coop, Brazil Nuts|650|Brazil nuts
-Coles, Brazil Nuts|650|Brazil nuts
-Hines, Brazil Nuts|650|Brazil nuts
-HEB, Brazil Nuts, Raw|650|Brazil nuts
-Ja!, Brazil Nuts, Natural|650|Brazil nuts
-Bassé, Brazil Nuts|650|Brazil nuts
-Co-op, Brazil Nuts|650|Brazil nuts
-Jumbo, Brazil Nuts|650|Brazil nuts
-Lucky, Brazil Nuts|650|Brazil nuts
-Tesco, Brazil Nuts|650|Brazil nuts
-Elan, Brazil Nuts, Raw|650|Brazil nuts
-Natural Nuts, Brazil Nuts|650|Brazil nuts
-Alesto, Brazil Nuts|650|Brazil nuts
-Publix, Brazil Nuts|650|Brazil nuts
-DM, Bio, Brazil Nuts|650|Brazil nuts
-Rimi, Nut Bar with Brazil|650|Brazil nuts
-Sprouts, Brazil Nuts|650|Brazil nuts
-Coles, Brazil Nuts, Natural|650|Brazil nuts
-Yupik, Brazil Nuts, Raw|650|Brazil nuts
-Yupik, Brazil Nuts, Raw|650|Brazil nuts
-I'm a Nut, Raw Brazil nuts|650|Brazil nuts
-I'm A Nut, Raw Brazil Nuts|650|Brazil nuts
-We Got Nuts, Brazil Nuts|650|Brazil nuts
-Nut Cravings, Raw Brazil Nuts|650|Brazil nuts
-Nut Cravings, Raw Brazil Nuts|650|Brazil nuts
-Walmart, Brazil Nuts|650|Brazil nuts
-Royal Nuts, Brazil Nuts, Raw|650|Brazil nuts
-Delhaize, Brazil Nuts|650|Brazil nuts
-Delhaize, Brazil Nuts|650|Brazil nuts
-Eillien's, Brazil Nuts|650|Brazil nuts
-Eillien's, Brazil Nuts|650|Brazil nuts
-Joe's, Raw Brazil Nuts|650|Brazil nuts
-Waitrose, Brazil Nuts|650|Brazil nuts
-Nuts.com, Organic Brazil Nuts|650|Brazil nuts
-I'm a Nut, Brazil Nuts, Dry Roasted|650|Brazil nuts
-Wegmans, Brazil Nuts, Raw|650|Brazil nuts
-Yupik, Brazil Nuts, Broken|650|Brazil nuts
-Fruidles, Brazil Nuts, Raw|650|Brazil nuts
-Nut Cravings, Brazil Nuts, Roasted & Salted|650|Brazil nuts
-Yu Pik, Brazil Nuts, Organic|650|Brazil nuts
-dmBio, Brazil Nut Kernel|650|Brazil nuts
-Bread, Mixed Grain, Added Seeds, Commercial, Toasted|651|Bread
-Bread, Whole Wheat, Commercially Prepared|651|Bread
-Bread, Rye|651|Bread
-Bread, White, Commercially Prepared|651|Bread
-Sourdough Bread|651|Bread
-Bread Roll, Soft, White|651|Bread
-Wheat Bread|651|Bread
-Bread, Rye|651|Bread
-Whole Wheat Bread, Homemade or Bakery|651|Bread
-White Bread, Homemade or Bakery|651|Bread
-Bread, Wheat|651|Bread
-Bread, Italian|651|Bread
-Bread, Wheat, Toasted|651|Bread
-Maine Brown Bread|651|Bread
-White Bread, Low Sodium|651|Bread
-Cracked Wheat Bread|651|Bread
-Boston Brown Bread|651|Bread
-Oatmeal Bread, Low Calorie|651|Bread
-Bread, Rye, Toasted|651|Bread
-Rye Bread, Reduced Calorie, Light, High Fiber|651|Bread
-Gluten Free Bread, Multigrain or Whole Grain|651|Bread
-Wheat Bread, Reduced Calorie, High Fiber|651|Bread
-Bread, wheat bran|651|Bread
-Bread, White Wheat|651|Bread
-Whole Wheat Bread, Low Sodium|651|Bread
-White Bread, Reduced Calorie, Light, High Fiber|651|Bread
-Bread, cracked-wheat|651|Bread
-Bread, Wheat, Sprouted|651|Bread
-Multigrain Bread, Reduced Calorie, Light, High Fiber|651|Bread
-Bread, oatmeal, toasted|651|Bread
-Cracked Wheat Bread, Reduced Calorie, High Fiber|651|Bread
-Bread, oat bran, toasted|651|Bread
-Sprouted whole grain bread|651|Bread
-White Whole Grain Wheat Bread|651|Bread
-Bread, boston brown, canned|651|Bread
-Bread, reduced-calorie, rye|651|Bread
-Bread, wheat germ, toasted|651|Bread
-Bread, wheat, sprouted, toasted|651|Bread
-Bread, reduced-calorie, wheat|651|Bread
-Bread, reduced-calorie, white|651|Bread
-White and Whole Wheat Swirl Bread|651|Bread
-Bread, Whole-Wheat, Commercially Prepared, Toasted|651|Bread
-Bread, Multi-Grain, Includes Whole-Grain|651|Bread
-Kellogg's, Raisin Bran|652|Breakfast cereal
-Broccoli, Cooked From Fresh|653|Broccoli
-Broccoli, Raw|653|Broccoli
-Butter, Salted|654|Butter
-Butter, without Salt|654|Butter
-Cabbage, Raw|655|Cabbage
-Capsicum, Red, Cooked|656|Capsicum
-Red Capsicum, Raw|656|Capsicum
-Green Capsicum, Raw|656|Capsicum
-Yellow Capsicum, Raw|656|Capsicum
-Capsicum, Green, Cooked|656|Capsicum
-Capsicum, Red, Canned|656|Capsicum
-Capsicum, Yellow, Cooked|656|Capsicum
-Carrots, Raw|657|Carrots
-Carrots, Cooked From Fresh|657|Carrots
-Cashews, Raw|658|Cashews
-Cashews, Dry Roasted, Salted|658|Cashews
-Cashews, Dry Roasted, Unsalted|658|Cashews
-Cashews, Oil Roasted, Salted|658|Cashews
-Cashews, Oil Roasted, Unsalted|658|Cashews
-Cashews, Oil Roasted, Lightly Salted|658|Cashews
-Cauliflower, Raw|659|Cauliflower
-Cauliflower, Cooked from Fresh|659|Cauliflower
-Cereal Bar|660|Cereal bars
-Cereal Bar, Low Fat|660|Cereal bars
-Cheese, Cheddar|661|Cheese
-Feta Cheese|661|Cheese
-Brie Cheese|661|Cheese
-Chia Seeds|662|Chia seeds
-Chicken Breast, Skinless, Cooked|663|Chicken
-Chicken Thigh, Skin Removed|663|Chicken
-Chickpeas, Canned, Drained and Rinsed|664|Chickpeas
-Chickpeas, Boiled without Salt|664|Chickpeas
-Chickpeas, Canned, Drained|664|Chickpeas
-Cider|665|Cider
-Coconut Milk, Plain or Original, Not Fortified, Typically Used in Cooking|666|Coconut milk
-Coconut Milk, Plain or Original, Fortified|666|Coconut milk
-Coconut milk|666|Coconut milk
-Coconut Oil|667|Coconut oil 
-Oil, Coconut|667|Coconut oil 
-Coffee|668|Coffee
-Kellogg's, Corn Flakes|669|Corn
-Corn, Yellow, Canned, Drained|669|Corn
-Corn, Yellow, Cooked from Frozen, Whole Kernel|669|Corn
-Corn on the Cob, Yellow, Cooked from Fresh|669|Corn
-Couscous, Dry|670|Couscous
-Couscous, Cooked|670|Couscous
-Couscous, Cooked|670|Couscous
-Milk, Whole|671|Cow's milk
-Milk, 2% Fat, Reduced Fat|671|Cow's milk
-Milk, 1 1/2% Fat|671|Cow's milk
-Milk, Skim, Fat Free|671|Cow's milk
-Milk, 1/2% Fat|671|Cow's milk
-Saltine Cracker, Soda Cracker|672|Cracker biscuits
-Graham Crackers|672|Cracker biscuits
-Nabisco ,Ritz Crackers, Original|672|Cracker biscuits
-Damora, Admiral's Quarters, Original Water Crackers|672|Cracker biscuits|672|Cracker biscuits
-Cracker Jack, Original|672|Cracker biscuits
-Cracker, gluten free|672|Cracker biscuits
-Cracker, Flavored or Seasoned|672|Cracker biscuits
-Wheat Cracker|672|Cracker biscuits
-Potato Chips, Salted|673|Crisps
-Cucumber, Raw, With Peel|674|Cucumber
-Cucumber, Raw, Without Peel|674|Cucumber
-Cheese Substitute, Dairy Free, Almond Based|675|Dairy-free cheese
-Cheese Substitute, Dairy Free, Soy Based|675|Dairy-free cheese
-Choice, Dairy Free Ice Cream, Chocolate|676|Dairy-free ice cream
-Pana, Dairy Free Ice Cream, Salted Caramel|676|Dairy-free ice cream
-Choice, Dairy-Free Ice Cream, Heavenly Chocolate|676|Dairy-free ice cream
-COYO, Dairy Free Ice Cream, Vanilla Bean|676|Dairy-free ice cream
-Dark Chocolate Bar, 70%-85% Cacao|677|Dark chocolate
-Dark Chocolate Bar, 45%-59% Cacao|677|Dark chocolate
-Dark Chocolate Bar, Sugar Free|677|Dark chocolate
-Dark Chocolate Bar, 60%-69% Cacao|677|Dark chocolate
-Dark Chocolate Chips, 70%-85% Cacao|677|Dark chocolate
-Dark Chocolate Chips, 60%-69% Cacao|677|Dark chocolate
-Dark Chocolate Chips, 45%-59% Cacao|677|Dark chocolate
-Eggs, Cooked|678|Eggs
-Egg as an Ingredient|678|Eggs
-Fried Eggs, Whole Egg|678|Eggs
-Baked Eggs|678|Eggs
-Scrambled Egg, with Salt|678|Eggs
-Poached Eggs|678|Eggs
-Fish, Battered|679|Fish
-Fish, Salmon, Atlantic, Farmed, Raw|679|Fish
-Fish Sticks, Patties, or Nuggets, Breaded|679|Fish
-Red Fish|679|Fish
-Fish, Tilapia, Raw|679|Fish
-Cuttle Fish|679|Fish
-Fish, Salmon, Pink, Raw|679|Fish
-Salmon, Atlantic, Wild, Cooked|679|Fish
-Salmon, Smoked|679|Fish
-Salmon, King, Cooked|679|Fish
-Tuna, Canned, Light, Water Pack, No Salt, Drained|679|Fish
-Smoothie, Fruit, Made without Dairy Products|680|Fruit smoothies
-Grapes, Raw|681|Grapes
-Grapes, Home Canned|681|Grapes
-Grapes, Cooked from Fresh, Sweetened|681|Grapes
-Grapes, Cooked from Fresh, Unsweetened|681|Grapes
-Grapes, American Type, Slip Skin, Raw|681|Grapes
-Grapes, Red or Green, European Type, such as Thompson Seedless, Raw|681|Grapes
-Grapes, canned, thompson seedless, water pack, solids and liquids|681|Grapes
-Ice Cream, Vanilla or Other Flavors, Includes Chocolate Chip|682|Ice cream
-Kale, Cooked from Fresh|683|Kale
-Kale, Raw|683|Kale
-Kiwi Fruit, Green|684|Kiwis
-Lamb, Ground|685|Lamb
-Lamb Chops, Shoulder, Visible Fat Eaten|685|Lamb
-Lamb Chops, Loin, Visible Fat Eaten|685|Lamb
-Lamb Chops, Loin, No Visible Fat Eaten|685|Lamb
-Lamb Chops, Breast|685|Lamb
-Lamb Chops, Rib, Visible Fat Eaten|685|Lamb
-Lamb Chops, Rib, No Visible Fat Eaten|685|Lamb
-Lamb Chops, Shoulder, No Visible Fat Eaten|685|Lamb
-Lamb Chops, Arm, No Visible Fat Eaten|685|Lamb
-Lamb Chops, Arm, Visible Fat Eaten|685|Lamb
-Lamb Chops, Blade, No Visible Fat Eaten|685|Lamb
-Lamb Chops, Blade, Visible Fat Eaten|685|Lamb
-Lamb Chops, Sirloin, Visible Fat Eaten|685|Lamb
-Lamb Chops, Sirloin, No Visible Fat Eaten|685|Lamb
-Lamb Chops, Leg, Center Slice, Visible Fat Eaten|685|Lamb
-Lamb Chops, Leg, Center Slice, No Visible Fat Eaten|685|Lamb
-Lamb Roast, Leg, No Visible Fat Eaten|685|Lamb
-Lamb Roast, Leg, Visible Fat Eaten|685|Lamb
-Lamb Roast, Breast|685|Lamb
-Lamb Roast, Shoulder, Visible Fat Eaten|685|Lamb
-Lamb Roast, Shank or Foreshank, Visible Fat Eaten|685|Lamb
-Lamb Roast, Shank or Foreshank, No Visible Fat Eaten|685|Lamb
-Lamb Roast, Shoulder, No Visible Fat Eaten|685|Lamb
-Lamb Roast, Loin, No Visible Fat Eaten|685|Lamb
-Lamb Roast, Rib, Visible Fat Eaten|685|Lamb
-Lamb Roast, Arm, No Visible Fat Eaten|685|Lamb
-Lamb Roast, Rib, No Visible Fat Eaten|685|Lamb
-Lamb Roast, Arm, Visible Fat Eaten|685|Lamb
-Lamb Roast, Loin, Visible Fat Eaten|685|Lamb
-Lamb Roast, Blade, No Visible Fat Eaten|685|Lamb
-Lamb Roast, Crown, No Visible Fat Eaten|685|Lamb
-Lamb Roast, Blade, Visible Fat Eaten|685|Lamb
-Lamb Roast, Crown, Visible Fat Eaten|685|Lamb
-Lamb Roast, Sirloin, No Visible Fat Eaten|685|Lamb
-Lamb Roast, Sirloin, Visible Fat Eaten|685|Lamb
-Lemons, Raw|686|Lemons
-Lentils, Boiled|687|Lentils
-Lentils, Raw|687|Lentils
-Lettuce, Iceberg|688|Lettuce
-Lettuce, Green Leaf|688|Lettuce
-Lettuce, Romaine or Cos|688|Lettuce
-Lettuce, Red Leaf|688|Lettuce
-Lettuce, Mixed Greens|688|Lettuce
-Lettuce Wrap, without Dipping Sauce|688|Lettuce
-Lettuce, Cos or Romaine, Raw|688|Lettuce
-Lettuce, Red Leaf, Raw|688|Lettuce
-Lettuce, Green Leaf, Raw|688|Lettuce
-Milk Chocolate Bar|689|Milk chocolate
-Milk Chocolate Chips|689|Milk chocolate
-Carman's, Fruit & Nut Muesli Bars, Classic|690|Muesli
-Carmen's, Fruit Free Muesli Bars, Original|690|Muesli
-Familia, Swiss, Muesli, No Added Sugar|690|Muesli
-Familia, Swiss Muesli, Original Recipe|690|Muesli
-Quaker, Muesli, Raisin Date Almond|690|Muesli
-Muesli, Commercial, Gluten Free|690|Muesli
-Muesli, Commercial, Toasted, Added Dried Fruit, Unfortified|690|Muesli
-Mix It, Muesli|690|Muesli
-Muesli, Commercial, Toasted, Added Nuts, Unfortified|690|Muesli
-Muesli, Commercial, Toasted, Added Dried Fruit & Nuts, Unfortified|690|Muesli
-Muesli and Co, Coconut Ginger Granola|690|Muesli
-Asda, Muesli|690|Muesli
-Coles, Muesli|690|Muesli
-Mushrooms, Cooked from Fresh|691|Mushrooms
-Mushrooms, Raw|691|Mushrooms
-Mushrooms, Dried|691|Mushrooms
-Oat milk|692|Oat milk
-Rolled Oats, dry|693|Oats
-Oats, Dry|693|Oats
-Oats, Raw, Dry|693|Oats
-Oatmeal, Regular or Quick, Dry|693|Oats
-Olive Oil|694|Olive oil
-Oil, Olive, Salad or Cooking|694|Olive oil
-Onion, White, Yellow or Red, Cooked|695|Onions
-Onion, White, Yellow or Red, Raw|695|Onions
-Orange Juice, Fresh|696|Orange juice
-Orange Juice, Not Fortified|696|Orange juice
-Orange Juice Beverage|696|Orange juice
-Oranges, Raw|697|Oranges
-Pasta, Dry, Unenriched|698|Pasta
-Pasta, Whole-Wheat, Dry|698|Pasta
-Pasta, Dry, Enriched|698|Pasta
-Peanut Butter, Salted|699|Peanut butter
-Peanut Butter, Natural, Unsalted|699|Peanut butter
-Peanut Butter, Natural, Salted|699|Peanut butter
-Peanut Butter, Unsalted|699|Peanut butter
-Peanuts, Raw|700|Peanuts
-Peanuts, Dry Roasted, Salted|700|Peanuts
-Peanuts, Dry Roasted, Unsalted|700|Peanuts
-Peanuts, Dry Roasted, Lightly Salted|700|Peanuts
-Peanuts, Oil Roasted, Lightly Salted|700|Peanuts
-Pear, Raw|701|Pears
-Pear, Canned in Juice|701|Pears
-Peas, Green, Frozen, Cooked, Boiled, Drained, Without Salt|702|Peas
-Green Peas, Raw|702|Peas
-Green Peas, Canned, Drained|702|Peas
-Snow Peas, Edible Pea Pods, Raw|702|Peas
-Green Peas, Cooked from Fresh|702|Peas
-Snow Peas, Cooked from Frozen|702|Peas
-Peas, Green, Raw|702|Peas
-Nuts, Pecans|703|Pecan nuts
-Nuts, pecans, dry roasted, without salt added|703|Pecan nuts
-Nuts, pecans, oil roasted, without salt added|703|Pecan nuts
-Pineapple, Raw|704|Pineapple
-Pineapple, Home Canned|704|Pineapple
-Pineapple, Canned in Water|704|Pineapple
-Pineapple, Dried, Sweetened|704|Pineapple
-Pineapple, Cooked, Sweetened|704|Pineapple
-Pineapple, Dried, Unsweetened|704|Pineapple
-Pineapple, Canned in Juice, Drained|704|Pineapple
-Pineapple, frozen, unsweetened|704|Pineapple
-Pineapple, Canned in Juice, Not Drained|704|Pineapple
-Sausage, Pork, Fresh|705|Pork
-Potato, Boiled with Skin|706|Potatoes
-Potatoes, Baked, Flesh and Skin, Without Salt|706|Potatoes
-Potato, Boiled without Skin|706|Potatoes
-Potatoes, Pan Fried|706|Potatoes
-Potatoes, Roasted with Oil|706|Potatoes
-Potatoes, Pan Fried, Pima Indian|706|Potatoes
-Mashed Potatoes, Prepared from Fresh|706|Potatoes
-Potatoes, Flesh and Skin, Raw|706|Potatoes
-Prawns, Cooked from Fresh|707|Prawns
-Prawns, Cooked from Frozen|707|Prawns
-Prawns, King, Raw|707|Prawns
-Quest Protein Bar, Cookies & Cream|708|Protein bar
-Protein One Bar, Chocolate Chip|708|Protein bar
-Clif, Builder's 20g Protein Bar, Chocolate Mint|708|Protein bar
-Protein One Bar, Chocolate Fudge|708|Protein bar
-Quest Protein Bar, Chocolate Chip Cookie Dough|708|Protein bar
-Protein One Bar, Peanut Butter Chocolate|708|Protein bar
-High-Protein Bar|708|Protein bar
-Premier Protein Shake, Chocolate|709|Protein shake
-Premier Protein Shake, Vanilla|709|Protein shake
-Pumpkin or Squash Seeds, Unshelled, Unsalted|710|Pumpkin seeds
-Pumpkin or Squash Seeds, Shelled, Unsalted|710|Pumpkin seeds
-Pumpkin or Squash Seeds, With Shell, Salted|710|Pumpkin seeds
-Pumpkin or Squash Seeds, Shelled, Salted|710|Pumpkin seeds
-Quinoa, Dry|711|Quinoa
-Quinoa, Cooked|711|Quinoa
-Quinoa, Cooked|711|Quinoa
-Raspberries, Raw|712|Raspberries
-Raspberries, Dried|712|Raspberries
-Rice, White, Long-Grain, Regular, Enriched, Cooked|713|Rice
-Rice, Brown, Long-Grain, Cooked|713|Rice
-Jasmine Rice, Cooked in Salted Water|713|Rice
-Rice Noodles, Cooked in Unsalted Water|714|Rice noodles
-Rice Noodles, Fried|714|Rice noodles
-Rice Noodles, Cooked in Salted Water|714|Rice noodles
-Rice Noodles, Dry|714|Rice noodles
-Rice Noodles, Cooked|714|Rice noodles
-Soy Milk, Plain or Original, Unsweetened, Ready-to-Drink, Fortified|715|Soy milk
-Soy Milk, Plain or Original, Unsweetened, Not Fortified, Ready-to-Drink|715|Soy milk
-Soy Milk, Plain or Original, Sweetened with Sugar, Ready-to-Drink, Enriched|715|Soy milk
-Soy Milk, Plain or Original, Unprepared Dry Powder|715|Soy milk
-Soy Milk, Plain or Original, Reconstituted From Dry|715|Soy milk
-Soy Milk, Plain or Original, Sweetened with Sugar, Ready-to-drink, Not Fortified|715|Soy milk
-Soy Life, Yoghurt, Vanilla Creme|716|Soy yoghurt
-Rewe Bio, Soy Yoghurt|716|Soy yoghurt
-Milfina, Soy Yoghurt, Natural|716|Soy yoghurt
-Milsa+, Soy Yoghurt, Unsweetened|716|Soy yoghurt
-Alpro, Soy Yoghurt, Strawberry|716|Soy yoghurt
-Sojasun, Soy Yoghurt, Lemon|716|Soy yoghurt
-Delhaize, Soy Yoghurt, Natural|716|Soy yoghurt
-Spinach, Cooked from Fresh|717|Spinach
-Spinach, Raw|717|Spinach
-Strawberries, Raw|718|Strawberries
-Strawberries, Dried|718|Strawberries
-Strawberries, Frozen, Unsweetened|718|Strawberries
-Jam or Preserves|719|Strawberry jam
-Coles, Strawberry Jam|719|Strawberry jam
-Sunflower Oil|720|Sunflower oil
-Sunflower Seeds, Raw|721|Sunflower seeds
-Sunflower Seeds, Dry Roasted, Unsalted|721|Sunflower seeds
-Sunflower Seeds, Oil Roasted, Salted|721|Sunflower seeds
-Sunflower Seeds, Dry Roasted, Salted|721|Sunflower seeds
-Sunflower Seeds, Oil Roasted, Unsalted|721|Sunflower seeds
-Tea, Brewed, Unsweetened|722|Tea
-Tea, Brewed, Unsweetened|722|Tea
-Tea, Spiced, Instant|722|Tea
-Tea, Brewed, Sweetened with Sugar|722|Tea
-Tea, Instant, Unsweetened|722|Tea
-Tea, Brewed, Decaf, Unsweetened|722|Tea
-Tea, Instant, Sweetened with Sugar|722|Tea
-Tea, Unsweetened, Pima Indian|722|Tea
-Tea, Instant, Decaf, Unsweetened|722|Tea
-Tea, Brewed, Decaf, Sweetened with Sugar|722|Tea
-Tea, Instant, Sweetened with Aspartame|722|Tea
-Tea, Instant, Dry Mix, Unsweetened|722|Tea
-Tea, Instant, Sweetened with Saccharin|722|Tea
-Tea, Instant, Decaf, Sweetened with Sugar|722|Tea
-Tea, Purchased Ready-to-drink, Unsweetened|722|Tea
-Tea, Brewed, Sweetened with Artificial Sweetener|722|Tea
-Tea, Instant, Dry Mix, Sweetened with Sugar|722|Tea
-Tea, Instant, Decaf, Sweetened with Aspartame|722|Tea
-Tea, Instant, Dry Mix, Decaf, Unsweetened|722|Tea
-Tea, Instant, Dry Mix, Sweetened With Aspartame|722|Tea
-Tea, Instant, Dry Mix, Sweetened with Saccharin|722|Tea
-Tea, Brewed, Decaf, Sweetened with Artificial Sweetener|722|Tea
-Tea, Instant, Dry Mix, Decaf, Sweetened with Sugar|722|Tea
-Tea, Purchased Ready-to-Drink, Decaf, Unsweetened|722|Tea
-Tea, Purchased Ready-to-drink, Sweetened with Sucralose|722|Tea
-Tea, Instant, Dry Mix, Decaf, Sweetened with Aspartame|722|Tea
-Tea, Instant, Sweetened with Sugar and Artificial Sweetener|722|Tea
-Tea, Purchased Ready-to-drink, Decaf, Sweetened with Sugar|722|Tea
-Tea, Purchased Ready-to-drink, Decaf, Sweetened with Aspartame|722|Tea
-Tea, Purchased Ready-to-drink, Decaf, Sweetened with Sucralose|722|Tea
-Tea, Instant, Dry Mix, Sweetened with Sugar and Artificial Sweetener|722|Tea
-Tea, Instant, Decaf, Sweetened with Aspartame and Acesulfame Potassium|722|Tea
-Tea, Purchased Ready-to-drink, Sweetened with Sugar (e.g. Arizona and Snapple)|722|Tea
-Tea, Instant, Dry Mix, Sweetened with Aspartame and Acesulfame Potassium|722|Tea
-Tea, Purchased Ready-to-drink, Sweetened with Sspartame (e.g. Diet Snapple)|722|Tea
-Tea, Purchased Ready-to-Drink, Sweetened with Sugar and Artificial Sweetener Blend|722|Tea
-Tea, Instant, Dry Mix, Decaf, Sweetened with Aspartame and Acesulfame Potassium|722|Tea
-Tea, Instant, All Flavors or Plain, Sweetened with Aspartame and Acesulfame Potassium|722|Tea
-Tea, Purchased Ready-to-drink, Decaf, Sweetened with Sugar and Artificial Sweetener Blend|722|Tea
-Tea, Purchased Ready-to-drink, Sweetened with Sucralose-acesulfame Potassium Blend|722|Tea
-Tea, Purchased Ready-to-drink, Decaf, Sweetened with Aspartame-acesulfame Potassium Blend|722|Tea
-Tea, Purchased Ready-to-drink, Decaf, Sweetened with Sucralose-acesulfame Potassium Blend|722|Tea
-Green Tea|722|Tea
-Chai Tea|722|Tea
-Bubble Tea|722|Tea
-Herbal Tea|722|Tea
-Ginger tea|722|Tea
-Jasmine Tea|722|Tea
-Oolong Tea|722|Tea
-Tofu, Not Silken, Cooked, Extra Firm|723|Tofu
-Tofu, Raw, Not Silken, Cooked, Soft|723|Tofu
-Tofu, Fried|723|Tofu
-Tofu, Not Silken, Cooked, Firm|723|Tofu
-Tofu, Silken, Cooked|723|Tofu
-Tofu, Silken, Not Cooked|723|Tofu
-Tomato, Canned|724|Tomatoes
-Tomato, Red, Raw|724|Tomatoes
-Tomato, Cooked from Fresh|724|Tomatoes
-Walnuts|725|Walnuts
-Watermelon, Raw|726|Watermelon
-Red Wine, Other Types|727|Wine
-Wine Cooler|727|Wine
-Wine Spritzer|727|Wine
-Wine, Non-Alcoholic|727|Wine
-White Wine, Other Types|727|Wine
-Rose Wine|727|Wine
-Port Wine|727|Wine
-Cooking Wine|727|Wine
-Rhine Wine|727|Wine
-Chablis Wine|727|Wine
-Claret Wine|727|Wine
-Tokaji Wine|727|Wine
-Traminer Wine|727|Wine
-Bordeaux Wine, Red|727|Wine
-Cooking Wine, Table|727|Wine
-Marsala Wine|727|Wine
-Barbera Wine|727|Wine
-Concord Wine|727|Wine
-Delaware Wine|727|Wine
-Madeira Wine|727|Wine
-Sauterne Wine|727|Wine
-Angelica Wine|727|Wine
-Burgundy Wine, Red|727|Wine
-Dessert Wine, Dry|727|Wine
-Beaujolais Wine|727|Wine
-Dessert Wine, Sweet|727|Wine
-Bordeaux Wine, White|727|Wine
-Burgundy wine, white|727|Wine
-Glogg, Mulled Wine|727|Wine
-Vino Rosso Wine|727|Wine
-Haut Sauterne Wine|727|Wine
-Chateau Sauterne Wine|727|Wine
-Wine, Red, Cooked|727|Wine
-Mountain High, Original Whole Milk Yoghurt, Plain|728|Yoghurt
-Mountain High Lowfat Yoghurt, Plain|728|Yoghurt
-Noosa Finest Yoghurt, Plain|728|Yoghurt
-Noosa Finest Yoghurt, Vanilla|728|Yoghurt
-Noosa Finest Yoghurt, Coconut|728|Yoghurt
-Noosa Finest Yoghurt, Fruit Flavors|728|Yoghurt
-Noosa Finest Yoghurt, Other Flavors|728|Yoghurt
-Mountain High, Fat Free Yoghurt, Plain|728|Yoghurt
+Ale|1|Ale
+Almond Butter, Unsalted|2|Almond butter
+Almond Butter, Salted|2|Almond butter
+Almond Milk, Plain, Original, Unsweetened|3|Almond milk
+Almond Milk, Plain, Original, Sweetened|3|Almond milk
+Almond milk, plain or original, unsweetened, refrigerated|3|Almond milk
+Almond Breeze Almond Milk Original|3|Almond milk
+Almond Breeze Almond Milk Original Unsweetened|3|Almond milk
+Silk Almond Milk Original|3|Almond milk
+Silk Almond Milk Unsweet|3|Almond milk
+Silk Almond Milk Organic Original|3|Almond milk
+Almonds, Raw|4|Almonds
+Almonds, Blanched|4|Almonds
+Almonds, Dry Roasted, Salted|4|Almonds
+Almonds, Dry Roasted, Unsalted|4|Almonds
+Apple Juice or Cider, Not Fortified|5|Apple juice
+Apple Juice or Cider, Fortified with Vitamin C|5|Apple juice
+Apple Juice or Cider, Fortified with Vitamin C and Calcium|5|Apple juice
+Apple & Eve, Apple Juice|5|Apple juice
+Arby's apple juice|5|Apple juice
+Appletiser, Apple Juice|5|Apple juice
+Apple & Eve, 100% Juice, Apple|5|Apple juice
+Gerber, Apple Juice|5|Apple juice
+Apple & Eve, 100% Juice, Apple Juice|5|Apple juice
+Applebee's, Kid's Apple Juice|5|Apple juice
+Apple, Fresh, Without Skin|6|Apples
+Apple, Dried, Uncooked|6|Apples
+Apple, Canned, Unsweetened|6|Apples
+Apples, Raw, Gala, with Skin|6|Apples
+Rose Apple, Fresh|6|Apples
+Mammy Apple, Fresh|6|Apples
+Apples, Raw, Fuji, with Skin|6|Apples
+Apples, Raw, Granny Smith, with Skin|6|Apples
+Apples, Raw, with Skin|6|Apples
+Asparagus, Cooked from Fresh|7|Asparagus
+Asparagus, Raw|7|Asparagus
+Asparagus, Cooked, Boiled, Drained|7|Asparagus
+HEB, Asparagus|7|Asparagus
+Asda, Asparagus|7|Asparagus
+Coop, Asparagus|7|Asparagus
+Lidl, Asparagus|7|Asparagus
+Alter, Asparagus|7|Asparagus
+Tesco, Asparagus|7|Asparagus
+Asda, Asparagus Tips|7|Asparagus
+Coop, Asparagus Tips|7|Asparagus
+Majesty, Asparagus|7|Asparagus
+Oaklands, Asparagus|7|Asparagus
+Waitrose, Asparagus|7|Asparagus
+Tesco, Asparagus Tips|7|Asparagus
+Coles, Asparagus Spears|7|Asparagus
+Avocado, Black Skin|8|Avocados
+Avocado, green skin|8|Avocados
+Avocados, Raw, All Commercial Varieties|8|Avocados
+Avocados, Raw, California|8|Avocados
+Avocados, Raw, Florida|8|Avocados
+Bacon, Pork|9|Bacon
+Bananas, Raw|10|Bananas
+Banana, Fried|10|Bananas
+Black Beans, Canned, Drained|11|Beans
+Beans, Black, Mature seeds, Cooked, Boiled without Salt|11|Beans
+Beef Steak, Sirloin, No Visible Fat Eaten|12|Beef
+Beef Steak, Sirloin, Visible Fat Eaten|12|Beef
+Hamburger or Ground Beef, 80% Lean|12|Beef
+Beer|13|Beer
+Beer, Low Carb|13|Beer
+Beer, 7.7% Alcohol|13|Beer
+Beer, Non Alcoholic|13|Beer
+Beer, Low Alcohol|13|Beer
+Light Beer|13|Beer
+Light Beer, 7.7% Alcohol|13|Beer
+Beetroot, Raw|14|Beetroot
+G's, Beetroot|14|Beetroot
+Rewe, Beetroot|14|Beetroot
+Hak, Beetroot|14|Beetroot
+Droga, Beetroot|14|Beetroot
+Beauvais, Beetroot|14|Beetroot
+BTG, Red Beetroot|14|Beetroot
+Gut Bio, Beetroot|14|Beetroot
+Hak, Beetroot Sticks|14|Beetroot
+Oak, Beetroot Slices|14|Beetroot
+Coles, Beetroot, Diced|14|Beetroot
+Alnatura, Beetroot|14|Beetroot
+Edgell, Beetroot, Sliced|14|Beetroot
+Coop, Cooked Beetroot|14|Beetroot
+Pams, Sliced Beetroot|14|Beetroot
+Dm Bio, Beetroot, Sliced|14|Beetroot
+Bio Bio, Beetroot, Cooked|14|Beetroot
+Tesco, Cooked Beetroot|14|Beetroot
+Yumi's, Roasted Beetroot|14|Beetroot
+Brookerpaks, Beetroot|14|Beetroot
+Chef, Sliced Beetroot|14|Beetroot
+Coles, Sliced Beetroot|14|Beetroot
+Brazil Nuts, Unsalted|15|Brazil nuts
+Brazil Nuts, Salted|15|Brazil nuts
+Nuts, Brazil Nuts, Dried, Unblanched|15|Brazil nuts
+Ja!, Brazil Nuts|15|Brazil nuts
+HEB, Brazil Nuts|15|Brazil nuts
+Pams, Brazil Nuts|15|Brazil nuts
+Pams, Brazil Nuts|15|Brazil nuts
+Nuttini, Brazil Nuts|15|Brazil nuts
+Asda, Brazil Nuts|15|Brazil nuts
+Coop, Brazil Nuts|15|Brazil nuts
+Coles, Brazil Nuts|15|Brazil nuts
+Hines, Brazil Nuts|15|Brazil nuts
+HEB, Brazil Nuts, Raw|15|Brazil nuts
+Ja!, Brazil Nuts, Natural|15|Brazil nuts
+Bassé, Brazil Nuts|15|Brazil nuts
+Co-op, Brazil Nuts|15|Brazil nuts
+Jumbo, Brazil Nuts|15|Brazil nuts
+Lucky, Brazil Nuts|15|Brazil nuts
+Tesco, Brazil Nuts|15|Brazil nuts
+Elan, Brazil Nuts, Raw|15|Brazil nuts
+Natural Nuts, Brazil Nuts|15|Brazil nuts
+Alesto, Brazil Nuts|15|Brazil nuts
+Publix, Brazil Nuts|15|Brazil nuts
+DM, Bio, Brazil Nuts|15|Brazil nuts
+Rimi, Nut Bar with Brazil|15|Brazil nuts
+Sprouts, Brazil Nuts|15|Brazil nuts
+Coles, Brazil Nuts, Natural|15|Brazil nuts
+Yupik, Brazil Nuts, Raw|15|Brazil nuts
+Yupik, Brazil Nuts, Raw|15|Brazil nuts
+I'm a Nut, Raw Brazil nuts|15|Brazil nuts
+I'm A Nut, Raw Brazil Nuts|15|Brazil nuts
+We Got Nuts, Brazil Nuts|15|Brazil nuts
+Nut Cravings, Raw Brazil Nuts|15|Brazil nuts
+Nut Cravings, Raw Brazil Nuts|15|Brazil nuts
+Walmart, Brazil Nuts|15|Brazil nuts
+Royal Nuts, Brazil Nuts, Raw|15|Brazil nuts
+Delhaize, Brazil Nuts|15|Brazil nuts
+Delhaize, Brazil Nuts|15|Brazil nuts
+Eillien's, Brazil Nuts|15|Brazil nuts
+Eillien's, Brazil Nuts|15|Brazil nuts
+Joe's, Raw Brazil Nuts|15|Brazil nuts
+Waitrose, Brazil Nuts|15|Brazil nuts
+Nuts.com, Organic Brazil Nuts|15|Brazil nuts
+I'm a Nut, Brazil Nuts, Dry Roasted|15|Brazil nuts
+Wegmans, Brazil Nuts, Raw|15|Brazil nuts
+Yupik, Brazil Nuts, Broken|15|Brazil nuts
+Fruidles, Brazil Nuts, Raw|15|Brazil nuts
+Nut Cravings, Brazil Nuts, Roasted & Salted|15|Brazil nuts
+Yu Pik, Brazil Nuts, Organic|15|Brazil nuts
+dmBio, Brazil Nut Kernel|15|Brazil nuts
+Bread, Mixed Grain, Added Seeds, Commercial, Toasted|16|Bread
+Bread, Whole Wheat, Commercially Prepared|16|Bread
+Bread, Rye|16|Bread
+Bread, White, Commercially Prepared|16|Bread
+Sourdough Bread|16|Bread
+Bread Roll, Soft, White|16|Bread
+Wheat Bread|16|Bread
+Bread, Rye|16|Bread
+Whole Wheat Bread, Homemade or Bakery|16|Bread
+White Bread, Homemade or Bakery|16|Bread
+Bread, Wheat|16|Bread
+Bread, Italian|16|Bread
+Bread, Wheat, Toasted|16|Bread
+Maine Brown Bread|16|Bread
+White Bread, Low Sodium|16|Bread
+Cracked Wheat Bread|16|Bread
+Boston Brown Bread|16|Bread
+Oatmeal Bread, Low Calorie|16|Bread
+Bread, Rye, Toasted|16|Bread
+Rye Bread, Reduced Calorie, Light, High Fiber|16|Bread
+Gluten Free Bread, Multigrain or Whole Grain|16|Bread
+Wheat Bread, Reduced Calorie, High Fiber|16|Bread
+Bread, wheat bran|16|Bread
+Bread, White Wheat|16|Bread
+Whole Wheat Bread, Low Sodium|16|Bread
+White Bread, Reduced Calorie, Light, High Fiber|16|Bread
+Bread, cracked-wheat|16|Bread
+Bread, Wheat, Sprouted|16|Bread
+Multigrain Bread, Reduced Calorie, Light, High Fiber|16|Bread
+Bread, oatmeal, toasted|16|Bread
+Cracked Wheat Bread, Reduced Calorie, High Fiber|16|Bread
+Bread, oat bran, toasted|16|Bread
+Sprouted whole grain bread|16|Bread
+White Whole Grain Wheat Bread|16|Bread
+Bread, boston brown, canned|16|Bread
+Bread, reduced-calorie, rye|16|Bread
+Bread, wheat germ, toasted|16|Bread
+Bread, wheat, sprouted, toasted|16|Bread
+Bread, reduced-calorie, wheat|16|Bread
+Bread, reduced-calorie, white|16|Bread
+White and Whole Wheat Swirl Bread|16|Bread
+Bread, Whole-Wheat, Commercially Prepared, Toasted|16|Bread
+Bread, Multi-Grain, Includes Whole-Grain|16|Bread
+Kellogg's, Raisin Bran|17|Breakfast cereal
+Broccoli, Cooked From Fresh|18|Broccoli
+Broccoli, Raw|18|Broccoli
+Butter, Salted|19|Butter
+Butter, without Salt|19|Butter
+Cabbage, Raw|20|Cabbage
+Capsicum, Red, Cooked|21|Capsicum
+Red Capsicum, Raw|21|Capsicum
+Green Capsicum, Raw|21|Capsicum
+Yellow Capsicum, Raw|21|Capsicum
+Capsicum, Green, Cooked|21|Capsicum
+Capsicum, Red, Canned|21|Capsicum
+Capsicum, Yellow, Cooked|21|Capsicum
+Carrots, Raw|22|Carrots
+Carrots, Cooked From Fresh|22|Carrots
+Cashews, Raw|23|Cashews
+Cashews, Dry Roasted, Salted|23|Cashews
+Cashews, Dry Roasted, Unsalted|23|Cashews
+Cashews, Oil Roasted, Salted|23|Cashews
+Cashews, Oil Roasted, Unsalted|23|Cashews
+Cashews, Oil Roasted, Lightly Salted|23|Cashews
+Cauliflower, Raw|24|Cauliflower
+Cauliflower, Cooked from Fresh|24|Cauliflower
+Cereal Bar|25|Cereal bars
+Cereal Bar, Low Fat|25|Cereal bars
+Cheese, Cheddar|26|Cheese
+Feta Cheese|26|Cheese
+Brie Cheese|26|Cheese
+Chia Seeds|27|Chia seeds
+Chicken Breast, Skinless, Cooked|28|Chicken
+Chicken Thigh, Skin Removed|28|Chicken
+Chickpeas, Canned, Drained and Rinsed|29|Chickpeas
+Chickpeas, Boiled without Salt|29|Chickpeas
+Chickpeas, Canned, Drained|29|Chickpeas
+Cider|30|Cider
+Coconut Milk, Plain or Original, Not Fortified, Typically Used in Cooking|31|Coconut milk
+Coconut Milk, Plain or Original, Fortified|31|Coconut milk
+Coconut milk|31|Coconut milk
+Coconut Oil|32|Coconut oil 
+Oil, Coconut|32|Coconut oil 
+Coffee|33|Coffee
+Kellogg's, Corn Flakes|34|Corn
+Corn, Yellow, Canned, Drained|34|Corn
+Corn, Yellow, Cooked from Frozen, Whole Kernel|34|Corn
+Corn on the Cob, Yellow, Cooked from Fresh|34|Corn
+Couscous, Dry|35|Couscous
+Couscous, Cooked|35|Couscous
+Couscous, Cooked|35|Couscous
+Milk, Whole|36|Cow's milk
+Milk, 2% Fat, Reduced Fat|36|Cow's milk
+Milk, 1 1/2% Fat|36|Cow's milk
+Milk, Skim, Fat Free|36|Cow's milk
+Milk, 1/2% Fat|36|Cow's milk
+Saltine Cracker, Soda Cracker|37|Cracker biscuits
+Graham Crackers|37|Cracker biscuits
+Nabisco ,Ritz Crackers, Original|37|Cracker biscuits
+Damora, Admiral's Quarters, Original Water Crackers|37|Cracker biscuits
+Cracker Jack, Original|37|Cracker biscuits
+Cracker, gluten free|37|Cracker biscuits
+Cracker, Flavored or Seasoned|37|Cracker biscuits
+Wheat Cracker|37|Cracker biscuits
+Potato Chips, Salted|38|Crisps
+Cucumber, Raw, With Peel|39|Cucumber
+Cucumber, Raw, Without Peel|39|Cucumber
+Cheese Substitute, Dairy Free, Almond Based|40|Dairy-free cheese
+Cheese Substitute, Dairy Free, Soy Based|40|Dairy-free cheese
+Choice, Dairy Free Ice Cream, Chocolate|41|Dairy-free ice cream
+Pana, Dairy Free Ice Cream, Salted Caramel|41|Dairy-free ice cream
+Choice, Dairy-Free Ice Cream, Heavenly Chocolate|41|Dairy-free ice cream
+COYO, Dairy Free Ice Cream, Vanilla Bean|41|Dairy-free ice cream
+Dark Chocolate Bar, 70%-85% Cacao|42|Dark chocolate
+Dark Chocolate Bar, 45%-59% Cacao|42|Dark chocolate
+Dark Chocolate Bar, Sugar Free|42|Dark chocolate
+Dark Chocolate Bar, 60%-69% Cacao|42|Dark chocolate
+Dark Chocolate Chips, 70%-85% Cacao|42|Dark chocolate
+Dark Chocolate Chips, 60%-69% Cacao|42|Dark chocolate
+Dark Chocolate Chips, 45%-59% Cacao|42|Dark chocolate
+Eggs, Cooked|43|Eggs
+Egg as an Ingredient|43|Eggs
+Fried Eggs, Whole Egg|43|Eggs
+Baked Eggs|43|Eggs
+Scrambled Egg, with Salt|43|Eggs
+Poached Eggs|43|Eggs
+Fish, Battered|44|Fish
+Fish, Salmon, Atlantic, Farmed, Raw|44|Fish
+Fish Sticks, Patties, or Nuggets, Breaded|44|Fish
+Red Fish|44|Fish
+Fish, Tilapia, Raw|44|Fish
+Cuttle Fish|44|Fish
+Fish, Salmon, Pink, Raw|44|Fish
+Salmon, Atlantic, Wild, Cooked|44|Fish
+Salmon, Smoked|44|Fish
+Salmon, King, Cooked|44|Fish
+Tuna, Canned, Light, Water Pack, No Salt, Drained|44|Fish
+Smoothie, Fruit, Made without Dairy Products|45|Fruit smoothies
+Grapes, Raw|46|Grapes
+Grapes, Home Canned|46|Grapes
+Grapes, Cooked from Fresh, Sweetened|46|Grapes
+Grapes, Cooked from Fresh, Unsweetened|46|Grapes
+Grapes, American Type, Slip Skin, Raw|46|Grapes
+Grapes, Red or Green, European Type, such as Thompson Seedless, Raw|46|Grapes
+Grapes, canned, thompson seedless, water pack, solids and liquids|46|Grapes
+Ice Cream, Vanilla or Other Flavors, Includes Chocolate Chip|47|Ice cream
+Kale, Cooked from Fresh|48|Kale
+Kale, Raw|48|Kale
+Kiwi Fruit, Green|49|Kiwis
+Lamb, Ground|50|Lamb
+Lamb Chops, Shoulder, Visible Fat Eaten|50|Lamb
+Lamb Chops, Loin, Visible Fat Eaten|50|Lamb
+Lamb Chops, Loin, No Visible Fat Eaten|50|Lamb
+Lamb Chops, Breast|50|Lamb
+Lamb Chops, Rib, Visible Fat Eaten|50|Lamb
+Lamb Chops, Rib, No Visible Fat Eaten|50|Lamb
+Lamb Chops, Shoulder, No Visible Fat Eaten|50|Lamb
+Lamb Chops, Arm, No Visible Fat Eaten|50|Lamb
+Lamb Chops, Arm, Visible Fat Eaten|50|Lamb
+Lamb Chops, Blade, No Visible Fat Eaten|50|Lamb
+Lamb Chops, Blade, Visible Fat Eaten|50|Lamb
+Lamb Chops, Sirloin, Visible Fat Eaten|50|Lamb
+Lamb Chops, Sirloin, No Visible Fat Eaten|50|Lamb
+Lamb Chops, Leg, Center Slice, Visible Fat Eaten|50|Lamb
+Lamb Chops, Leg, Center Slice, No Visible Fat Eaten|50|Lamb
+Lamb Roast, Leg, No Visible Fat Eaten|50|Lamb
+Lamb Roast, Leg, Visible Fat Eaten|50|Lamb
+Lamb Roast, Breast|50|Lamb
+Lamb Roast, Shoulder, Visible Fat Eaten|50|Lamb
+Lamb Roast, Shank or Foreshank, Visible Fat Eaten|50|Lamb
+Lamb Roast, Shank or Foreshank, No Visible Fat Eaten|50|Lamb
+Lamb Roast, Shoulder, No Visible Fat Eaten|50|Lamb
+Lamb Roast, Loin, No Visible Fat Eaten|50|Lamb
+Lamb Roast, Rib, Visible Fat Eaten|50|Lamb
+Lamb Roast, Arm, No Visible Fat Eaten|50|Lamb
+Lamb Roast, Rib, No Visible Fat Eaten|50|Lamb
+Lamb Roast, Arm, Visible Fat Eaten|50|Lamb
+Lamb Roast, Loin, Visible Fat Eaten|50|Lamb
+Lamb Roast, Blade, No Visible Fat Eaten|50|Lamb
+Lamb Roast, Crown, No Visible Fat Eaten|50|Lamb
+Lamb Roast, Blade, Visible Fat Eaten|50|Lamb
+Lamb Roast, Crown, Visible Fat Eaten|50|Lamb
+Lamb Roast, Sirloin, No Visible Fat Eaten|50|Lamb
+Lamb Roast, Sirloin, Visible Fat Eaten|50|Lamb
+Lemons, Raw|51|Lemons
+Lentils, Boiled|52|Lentils
+Lentils, Raw|52|Lentils
+Lettuce, Iceberg|53|Lettuce
+Lettuce, Green Leaf|53|Lettuce
+Lettuce, Romaine or Cos|53|Lettuce
+Lettuce, Red Leaf|53|Lettuce
+Lettuce, Mixed Greens|53|Lettuce
+Lettuce Wrap, without Dipping Sauce|53|Lettuce
+Lettuce, Cos or Romaine, Raw|53|Lettuce
+Lettuce, Red Leaf, Raw|53|Lettuce
+Lettuce, Green Leaf, Raw|53|Lettuce
+Milk Chocolate Bar|54|Milk chocolate
+Milk Chocolate Chips|54|Milk chocolate
+Carman's, Fruit & Nut Muesli Bars, Classic|55|Muesli
+Carmen's, Fruit Free Muesli Bars, Original|55|Muesli
+Familia, Swiss, Muesli, No Added Sugar|55|Muesli
+Familia, Swiss Muesli, Original Recipe|55|Muesli
+Quaker, Muesli, Raisin Date Almond|55|Muesli
+Muesli, Commercial, Gluten Free|55|Muesli
+Muesli, Commercial, Toasted, Added Dried Fruit, Unfortified|55|Muesli
+Mix It, Muesli|55|Muesli
+Muesli, Commercial, Toasted, Added Nuts, Unfortified|55|Muesli
+Muesli, Commercial, Toasted, Added Dried Fruit & Nuts, Unfortified|55|Muesli
+Muesli and Co, Coconut Ginger Granola|55|Muesli
+Asda, Muesli|55|Muesli
+Coles, Muesli|55|Muesli
+Mushrooms, Cooked from Fresh|56|Mushrooms
+Mushrooms, Raw|56|Mushrooms
+Mushrooms, Dried|56|Mushrooms
+Oat milk|57|Oat milk
+Rolled Oats, dry|58|Oats
+Oats, Dry|58|Oats
+Oats, Raw, Dry|58|Oats
+Oatmeal, Regular or Quick, Dry|58|Oats
+Olive Oil|59|Olive oil
+Oil, Olive, Salad or Cooking|59|Olive oil
+Onion, White, Yellow or Red, Cooked|60|Onions
+Onion, White, Yellow or Red, Raw|60|Onions
+Orange Juice, Fresh|61|Orange juice
+Orange Juice, Not Fortified|61|Orange juice
+Orange Juice Beverage|61|Orange juice
+Oranges, Raw|62|Oranges
+Pasta, Dry, Unenriched|63|Pasta
+Pasta, Whole-Wheat, Dry|63|Pasta
+Pasta, Dry, Enriched|63|Pasta
+Peanut Butter, Salted|64|Peanut butter
+Peanut Butter, Natural, Unsalted|64|Peanut butter
+Peanut Butter, Natural, Salted|64|Peanut butter
+Peanut Butter, Unsalted|64|Peanut butter
+Peanuts, Raw|65|Peanuts
+Peanuts, Dry Roasted, Salted|65|Peanuts
+Peanuts, Dry Roasted, Unsalted|65|Peanuts
+Peanuts, Dry Roasted, Lightly Salted|65|Peanuts
+Peanuts, Oil Roasted, Lightly Salted|65|Peanuts
+Pear, Raw|66|Pears
+Pear, Canned in Juice|66|Pears
+Peas, Green, Frozen, Cooked, Boiled, Drained, Without Salt|67|Peas
+Green Peas, Raw|67|Peas
+Green Peas, Canned, Drained|67|Peas
+Snow Peas, Edible Pea Pods, Raw|67|Peas
+Green Peas, Cooked from Fresh|67|Peas
+Snow Peas, Cooked from Frozen|67|Peas
+Peas, Green, Raw|67|Peas
+Nuts, Pecans|68|Pecan nuts
+Nuts, pecans, dry roasted, without salt added|68|Pecan nuts
+Nuts, pecans, oil roasted, without salt added|68|Pecan nuts
+Pineapple, Raw|69|Pineapple
+Pineapple, Home Canned|69|Pineapple
+Pineapple, Canned in Water|69|Pineapple
+Pineapple, Dried, Sweetened|69|Pineapple
+Pineapple, Cooked, Sweetened|69|Pineapple
+Pineapple, Dried, Unsweetened|69|Pineapple
+Pineapple, Canned in Juice, Drained|69|Pineapple
+Pineapple, frozen, unsweetened|69|Pineapple
+Pineapple, Canned in Juice, Not Drained|69|Pineapple
+Sausage, Pork, Fresh|70|Pork
+Potato, Boiled with Skin|71|Potatoes
+Potatoes, Baked, Flesh and Skin, Without Salt|71|Potatoes
+Potato, Boiled without Skin|71|Potatoes
+Potatoes, Pan Fried|71|Potatoes
+Potatoes, Roasted with Oil|71|Potatoes
+Potatoes, Pan Fried, Pima Indian|71|Potatoes
+Mashed Potatoes, Prepared from Fresh|71|Potatoes
+Potatoes, Flesh and Skin, Raw|71|Potatoes
+Prawns, Cooked from Fresh|72|Prawns
+Prawns, Cooked from Frozen|72|Prawns
+Prawns, King, Raw|72|Prawns
+Quest Protein Bar, Cookies & Cream|73|Protein bar
+Protein One Bar, Chocolate Chip|73|Protein bar
+Clif, Builder's 20g Protein Bar, Chocolate Mint|73|Protein bar
+Protein One Bar, Chocolate Fudge|73|Protein bar
+Quest Protein Bar, Chocolate Chip Cookie Dough|73|Protein bar
+Protein One Bar, Peanut Butter Chocolate|73|Protein bar
+High-Protein Bar|73|Protein bar
+Premier Protein Shake, Chocolate|74|Protein shake
+Premier Protein Shake, Vanilla|74|Protein shake
+Pumpkin or Squash Seeds, Unshelled, Unsalted|75|Pumpkin seeds
+Pumpkin or Squash Seeds, Shelled, Unsalted|75|Pumpkin seeds
+Pumpkin or Squash Seeds, With Shell, Salted|75|Pumpkin seeds
+Pumpkin or Squash Seeds, Shelled, Salted|75|Pumpkin seeds
+Quinoa, Dry|76|Quinoa
+Quinoa, Cooked|76|Quinoa
+Quinoa, Cooked|76|Quinoa
+Raspberries, Raw|77|Raspberries
+Raspberries, Dried|77|Raspberries
+Rice, White, Long-Grain, Regular, Enriched, Cooked|78|Rice
+Rice, Brown, Long-Grain, Cooked|78|Rice
+Jasmine Rice, Cooked in Salted Water|78|Rice
+Rice Noodles, Cooked in Unsalted Water|79|Rice noodles
+Rice Noodles, Fried|79|Rice noodles
+Rice Noodles, Cooked in Salted Water|79|Rice noodles
+Rice Noodles, Dry|79|Rice noodles
+Rice Noodles, Cooked|79|Rice noodles
+Soy Milk, Plain or Original, Unsweetened, Ready-to-Drink, Fortified|80|Soy milk
+Soy Milk, Plain or Original, Unsweetened, Not Fortified, Ready-to-Drink|80|Soy milk
+Soy Milk, Plain or Original, Sweetened with Sugar, Ready-to-Drink, Enriched|80|Soy milk
+Soy Milk, Plain or Original, Unprepared Dry Powder|80|Soy milk
+Soy Milk, Plain or Original, Reconstituted From Dry|80|Soy milk
+Soy Milk, Plain or Original, Sweetened with Sugar, Ready-to-drink, Not Fortified|80|Soy milk
+Soy Life, Yoghurt, Vanilla Creme|81|Soy yoghurt
+Rewe Bio, Soy Yoghurt|81|Soy yoghurt
+Milfina, Soy Yoghurt, Natural|81|Soy yoghurt
+Milsa+, Soy Yoghurt, Unsweetened|81|Soy yoghurt
+Alpro, Soy Yoghurt, Strawberry|81|Soy yoghurt
+Sojasun, Soy Yoghurt, Lemon|81|Soy yoghurt
+Delhaize, Soy Yoghurt, Natural|81|Soy yoghurt
+Spinach, Cooked from Fresh|82|Spinach
+Spinach, Raw|82|Spinach
+Strawberries, Raw|83|Strawberries
+Strawberries, Dried|83|Strawberries
+Strawberries, Frozen, Unsweetened|83|Strawberries
+Jam or Preserves|84|Strawberry jam
+Coles, Strawberry Jam|84|Strawberry jam
+Sunflower Oil|85|Sunflower oil
+Sunflower Seeds, Raw|86|Sunflower seeds
+Sunflower Seeds, Dry Roasted, Unsalted|86|Sunflower seeds
+Sunflower Seeds, Oil Roasted, Salted|86|Sunflower seeds
+Sunflower Seeds, Dry Roasted, Salted|86|Sunflower seeds
+Sunflower Seeds, Oil Roasted, Unsalted|86|Sunflower seeds
+Tea, Brewed, Unsweetened|87|Tea
+Tea, Brewed, Unsweetened|87|Tea
+Tea, Spiced, Instant|87|Tea
+Tea, Brewed, Sweetened with Sugar|87|Tea
+Tea, Instant, Unsweetened|87|Tea
+Tea, Brewed, Decaf, Unsweetened|87|Tea
+Tea, Instant, Sweetened with Sugar|87|Tea
+Tea, Unsweetened, Pima Indian|87|Tea
+Tea, Instant, Decaf, Unsweetened|87|Tea
+Tea, Brewed, Decaf, Sweetened with Sugar|87|Tea
+Tea, Instant, Sweetened with Aspartame|87|Tea
+Tea, Instant, Dry Mix, Unsweetened|87|Tea
+Tea, Instant, Sweetened with Saccharin|87|Tea
+Tea, Instant, Decaf, Sweetened with Sugar|87|Tea
+Tea, Purchased Ready-to-drink, Unsweetened|87|Tea
+Tea, Brewed, Sweetened with Artificial Sweetener|87|Tea
+Tea, Instant, Dry Mix, Sweetened with Sugar|87|Tea
+Tea, Instant, Decaf, Sweetened with Aspartame|87|Tea
+Tea, Instant, Dry Mix, Decaf, Unsweetened|87|Tea
+Tea, Instant, Dry Mix, Sweetened With Aspartame|87|Tea
+Tea, Instant, Dry Mix, Sweetened with Saccharin|87|Tea
+Tea, Brewed, Decaf, Sweetened with Artificial Sweetener|87|Tea
+Tea, Instant, Dry Mix, Decaf, Sweetened with Sugar|87|Tea
+Tea, Purchased Ready-to-Drink, Decaf, Unsweetened|87|Tea
+Tea, Purchased Ready-to-drink, Sweetened with Sucralose|87|Tea
+Tea, Instant, Dry Mix, Decaf, Sweetened with Aspartame|87|Tea
+Tea, Instant, Sweetened with Sugar and Artificial Sweetener|87|Tea
+Tea, Purchased Ready-to-drink, Decaf, Sweetened with Sugar|87|Tea
+Tea, Purchased Ready-to-drink, Decaf, Sweetened with Aspartame|87|Tea
+Tea, Purchased Ready-to-drink, Decaf, Sweetened with Sucralose|87|Tea
+Tea, Instant, Dry Mix, Sweetened with Sugar and Artificial Sweetener|87|Tea
+Tea, Instant, Decaf, Sweetened with Aspartame and Acesulfame Potassium|87|Tea
+Tea, Purchased Ready-to-drink, Sweetened with Sugar (e.g. Arizona and Snapple)|87|Tea
+Tea, Instant, Dry Mix, Sweetened with Aspartame and Acesulfame Potassium|87|Tea
+Tea, Purchased Ready-to-drink, Sweetened with Sspartame (e.g. Diet Snapple)|87|Tea
+Tea, Purchased Ready-to-Drink, Sweetened with Sugar and Artificial Sweetener Blend|87|Tea
+Tea, Instant, Dry Mix, Decaf, Sweetened with Aspartame and Acesulfame Potassium|87|Tea
+Tea, Instant, All Flavors or Plain, Sweetened with Aspartame and Acesulfame Potassium|87|Tea
+Tea, Purchased Ready-to-drink, Decaf, Sweetened with Sugar and Artificial Sweetener Blend|87|Tea
+Tea, Purchased Ready-to-drink, Sweetened with Sucralose-acesulfame Potassium Blend|87|Tea
+Tea, Purchased Ready-to-drink, Decaf, Sweetened with Aspartame-acesulfame Potassium Blend|87|Tea
+Tea, Purchased Ready-to-drink, Decaf, Sweetened with Sucralose-acesulfame Potassium Blend|87|Tea
+Green Tea|87|Tea
+Chai Tea|87|Tea
+Bubble Tea|87|Tea
+Herbal Tea|87|Tea
+Ginger tea|87|Tea
+Jasmine Tea|87|Tea
+Oolong Tea|87|Tea
+Tofu, Not Silken, Cooked, Extra Firm|88|Tofu
+Tofu, Raw, Not Silken, Cooked, Soft|88|Tofu
+Tofu, Fried|88|Tofu
+Tofu, Not Silken, Cooked, Firm|88|Tofu
+Tofu, Silken, Cooked|88|Tofu
+Tofu, Silken, Not Cooked|88|Tofu
+Tomato, Canned|89|Tomatoes
+Tomato, Red, Raw|89|Tomatoes
+Tomato, Cooked from Fresh|89|Tomatoes
+Walnuts|90|Walnuts
+Watermelon, Raw|91|Watermelon
+Red Wine, Other Types|92|Wine
+Wine Cooler|92|Wine
+Wine Spritzer|92|Wine
+Wine, Non-Alcoholic|92|Wine
+White Wine, Other Types|92|Wine
+Rose Wine|92|Wine
+Port Wine|92|Wine
+Cooking Wine|92|Wine
+Rhine Wine|92|Wine
+Chablis Wine|92|Wine
+Claret Wine|92|Wine
+Tokaji Wine|92|Wine
+Traminer Wine|92|Wine
+Bordeaux Wine, Red|92|Wine
+Cooking Wine, Table|92|Wine
+Marsala Wine|92|Wine
+Barbera Wine|92|Wine
+Concord Wine|92|Wine
+Delaware Wine|92|Wine
+Madeira Wine|92|Wine
+Sauterne Wine|92|Wine
+Angelica Wine|92|Wine
+Burgundy Wine, Red|92|Wine
+Dessert Wine, Dry|92|Wine
+Beaujolais Wine|92|Wine
+Dessert Wine, Sweet|92|Wine
+Bordeaux Wine, White|92|Wine
+Burgundy wine, white|92|Wine
+Glogg, Mulled Wine|92|Wine
+Vino Rosso Wine|92|Wine
+Haut Sauterne Wine|92|Wine
+Chateau Sauterne Wine|92|Wine
+Wine, Red, Cooked|92|Wine
+Mountain High, Original Whole Milk Yoghurt, Plain|93|Yoghurt
+Mountain High Lowfat Yoghurt, Plain|93|Yoghurt
+Noosa Finest Yoghurt, Plain|93|Yoghurt
+Noosa Finest Yoghurt, Vanilla|93|Yoghurt
+Noosa Finest Yoghurt, Coconut|93|Yoghurt
+Noosa Finest Yoghurt, Fruit Flavors|93|Yoghurt
+Noosa Finest Yoghurt, Other Flavors|93|Yoghurt
+Mountain High, Fat Free Yoghurt, Plain|93|Yoghurt
