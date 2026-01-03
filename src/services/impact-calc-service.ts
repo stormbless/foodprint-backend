@@ -42,8 +42,8 @@ interface FoodImpact {
   totalImpact: number
 }
 
-// calculate impact relative to average diet (for all metrics)
-function calcRelativeImpact(emissions: number, waterUse: number, landUse: number, eutrophication: number): number {
+// calculate total impact relative to average diet (includes all metrics)
+function calcRelativeTotalImpact(emissions: number, waterUse: number, landUse: number, eutrophication: number): number {
   // weight each metric equally (25% of relative impact each)
   const relativeEmissions = 0.25 * emissions / AVERAGE_DIET_IMPACT.emissionsPerDay;
   const relativeWaterUse = 0.25 * waterUse / AVERAGE_DIET_IMPACT.waterUsePerDay;
@@ -80,7 +80,7 @@ function calcImpactOverTime(foodEntries: FoodEntry[]): DateImpact[] {
       waterUse,
       landUse,
       eutrophication,
-      total: calcRelativeImpact(emissions, waterUse, landUse, eutrophication)
+      total: calcRelativeTotalImpact(emissions, waterUse, landUse, eutrophication)
     }
   })
   
@@ -107,7 +107,7 @@ function calcTotalImpact(foodEntries: FoodEntry[]): Impact {
     }
   }
 
-  const total = calcRelativeImpact(emissionsTotal, waterUseTotal, landUseTotal, eutrophicationTotal);
+  const total = calcRelativeTotalImpact(emissionsTotal, waterUseTotal, landUseTotal, eutrophicationTotal);
 
   const totalImpact = {
     emissions: emissionsTotal,
@@ -142,6 +142,7 @@ function calcAvgImpact(days: number): Impact {
   return avgImpact;
 }
 
+// calculates the percentage of the total impact in terms of the average impact for each env metric + total
 function calcPercentageOfAvg(totalImpact: Impact, avgImpact: Impact): Impact {
   return {
     emissions: +((totalImpact.emissions / avgImpact.emissions) * 100).toFixed(1),
@@ -152,7 +153,7 @@ function calcPercentageOfAvg(totalImpact: Impact, avgImpact: Impact): Impact {
   };
 }
 
-// calculate impact for a single food using food entries
+// calculate impact (all metrics + total) for a single food using food entries
 function calcFoodImpact(targetFood: string, foodEntries: FoodEntry[]): FoodImpact {
   let amount = 0;
   let emissions = 0;
@@ -173,7 +174,7 @@ function calcFoodImpact(targetFood: string, foodEntries: FoodEntry[]): FoodImpac
     }
   }
 
-  const totalImpact = calcRelativeImpact(emissions, waterUse, landUse, eutrophication);
+  const totalImpact = calcRelativeTotalImpact(emissions, waterUse, landUse, eutrophication);
 
   const foodImpact: FoodImpact = {
     food: targetFood,
@@ -188,6 +189,7 @@ function calcFoodImpact(targetFood: string, foodEntries: FoodEntry[]): FoodImpac
   return foodImpact;
 }
 
+// calculate impact (all metrics + total) for all foods in food entries
 function calcFoodImpacts(foodEntries: FoodEntry[]): FoodImpact[] {
   // get list of unique foods in foodEntries
   const uniqueFoods: string[] = [];
@@ -212,7 +214,7 @@ function calcFoodImpacts(foodEntries: FoodEntry[]): FoodImpact[] {
 }
 
 export default {
-  calcRelativeImpact,
+  calcRelativeTotalImpact,
   calcImpactOverTime,
   calcTotalImpact,
   calcAvgImpact,

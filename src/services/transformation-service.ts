@@ -30,59 +30,81 @@ interface CronometerFoodImpact {
   eutrophicationPerKg: number
 }
 
+//..................PRIVATE METHODS............
+
+// get list of unique foods/dates in servings
+function getUniqueProps(prop: string, servings: Serving[]): string[] {
+  const uniqueProps: string[] = [];
+  
+  for (let serving of servings) {
+    if (!uniqueProps.includes(serving[prop as keyof Serving] as string)) {
+      uniqueProps.push(serving[prop as keyof Serving] as string);
+    }
+  }
+
+  return uniqueProps;
+}
+
+// creates a serving impact object using food impact data and the amount in a serving
+function createServingImpact(matchingFood: CronometerFoodImpact, servingAmount: number) {
+  const servingImpact: ServingImpact = {
+    food: matchingFood.name,
+    amount: servingAmount,
+    emissions: matchingFood.emissionsPerKg * (servingAmount / 1000),
+    waterUse: matchingFood.waterUsePerKg * (servingAmount / 1000),
+    landUse: matchingFood.landUsePerKg * (servingAmount / 1000),
+    eutrophication: matchingFood.eutrophicationPerKg * (servingAmount / 1000)
+  };
+
+  return servingImpact;
+}
+
+// creates a food entry for a given user and date with all servings + env impact data (for each serving)
+function createFoodEntry(userEmail: string, date: string, 
+      servings: Serving[], foodImpacts: CronometerFoodImpact[]): FoodEntry {
+  
+  const foodEntry: FoodEntry = { userEmail: userEmail, date: new Date(date), servings: [] };
+
+  // servings with same date grouped into same food entry
+  for (let serving of servings) {
+    if (serving.date === date) {
+      // find food that matches serving food name and get impact data from it
+      const matchingFood = foodImpacts.find(food => food.cronometerFoodName === serving.food);
+      // if cronometer food name not in database (matching food would be undefined), don't add food's serving
+      if (matchingFood !== undefined) {
+        const servingImpact: ServingImpact = createServingImpact(matchingFood, serving.amount);
+
+        foodEntry.servings.push(servingImpact);
+      } 
+    }
+  }
+
+  return foodEntry;
+}
+
+
+
+//..................PUBLIC METHODS............
+
+
+
+// transform user's servings into food entries; which is basically servings grouped by date with impact metrics 
+// This format is more usable for calculating diet env impact and is stored in mongoDB collection later
 async function transformServingstoFoodEntries(userEmail: string, servings: Serving[]): Promise<FoodEntry[]> {
   const foodEntries: FoodEntry[] = [];
   
-  // get list of unique foods in servings
-  const uniqueFoods: string[] = [];
-  
-  for (let serving of servings) {
-    if (!uniqueFoods.includes(serving.food)) {
-      uniqueFoods.push(serving.food);
-    }
-  }
+  const uniqueFoods: string[] = getUniqueProps("food", servings);
 
   try {
     // get impact metrics for each unique cronometer food
     const foodImpacts: CronometerFoodImpact[] = await FoodModel.getCronometerFoodsImpact(uniqueFoods);
-    console.log(`typeof foodImpacts[0].emissionsPerKg: ${typeof foodImpacts[0]?.emissionsPerKg}`);
 
-    // get list of unique dates in servings
-    const uniqueDates: string[] = [];
-    
-    for (let serving of servings) {
-      if (!uniqueDates.includes(serving.date)) {
-        uniqueDates.push(serving.date);
-      }
-    }
+    const uniqueDates: string[] = getUniqueProps("date", servings);
   
-    // for every unique date in servings, create a foodEntry object with userEmail, date, and list of foods (with impact metrics)
+    // create food entry for each unique date
     for (let date of uniqueDates) {
-      const foodEntry: FoodEntry = {userEmail: userEmail, date: new Date(date), servings: []};
-  
-      // group servings with same date into same food entry
-      // for every food in servings with the date, create food object and add to foodEntry foods
-      for (let serving of servings) {
-        if (serving.date === date) {
-          // find food that matches serving food name and get impact data from it
-          const matchingFood = foodImpacts.find(food => food.cronometerFoodName === serving.food);
-          // if cronometer food name not in database (matching food would be undefined), don't add food
-          if (matchingFood !== undefined) {
-            const servingImpact: ServingImpact = {
-              food: matchingFood.name,
-              amount: serving.amount,
-              emissions: matchingFood.emissionsPerKg * (serving.amount / 1000),
-              waterUse: matchingFood.waterUsePerKg * (serving.amount / 1000),
-              landUse: matchingFood.landUsePerKg * (serving.amount / 1000),
-              eutrophication: matchingFood.eutrophicationPerKg * (serving.amount / 1000)
-            }
-    
-            foodEntry.servings.push(servingImpact);
-          } 
-        }
-      }
+      const foodEntry: FoodEntry = createFoodEntry(userEmail, date, servings, foodImpacts);
       foodEntries.push(foodEntry);
-  
     }
   
   } catch (error) {

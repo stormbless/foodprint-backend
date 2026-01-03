@@ -18,17 +18,3 @@ router.get('/get-health', function (_req: Request, res: Response) {
 })
 
 export default router;
-
-// api endpoints
-
-// auth route
-
-// login, 
-// logout, 
-
-// env impact data route
-
-// impact over time data (3)
-// food breakdown data (4 + 5)
-// total impact data  (6 + 7)
-// impact / kg for specific food

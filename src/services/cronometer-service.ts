@@ -20,7 +20,7 @@ async function fetchServings(userEmail: string, userPassword: string): Promise<S
     // capture output printed from python script, resolve promise
     // TO DO: need to define servings data type somewhere cronometer-service and auth-controller can see it
     pythonScript.stdout.on('data', (servingsBuffer: Buffer) => {
-      console.log(`fetch_servings_data.py stdout: ${servingsBuffer.toString()}`);
+      console.log(`fetch_servings_data.py sent back servings data`)// ${servingsBuffer.toString()}`);
 
       // convert servings from buffer to array of serving objects
       const servings: Serving[] = JSON.parse(servingsBuffer.toString());
@@ -43,7 +43,7 @@ async function fetchServings(userEmail: string, userPassword: string): Promise<S
       resolve(servings);
     });
 
-    // capture errors from python script, reject promise
+    // capture errors from python script (usually occurs when auth with cronometer failed), reject promise
     pythonScript.stderr.on('data', (error) => {
       console.error(`fetch_servings_data.py stderr: ${error.toString()}`);
 

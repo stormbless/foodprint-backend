@@ -60,7 +60,7 @@ async function getAllFoodsImpactPerKg(): Promise<FoodImpactPerKg[]> {
 
   // calculate total impact peer kg for each food (relative to avg diet impact)
   const allFoodsImpact = foods.map((food) => {
-    const totalImpactPerKg = impactCalcService.calcRelativeImpact(
+    const totalImpactPerKg = impactCalcService.calcRelativeTotalImpact(
       food.emissionsPerKg, food.waterUsePerKg, food.landUsePerKg, food.eutrophicationPerKg
     );
 
