@@ -22,14 +22,7 @@ app.use(cookieParser());
 app.use(helmet());
 
 // CORS configuration (restricts requests to certain origins)
-let frontend: string = '';
-if (process.env.NODE_ENV === 'production') {
-  //origin = 'frontend address'
-} else {
-  frontend = 'http://localhost:5173';
-}
-
-const corsOptions = { origin: frontend, credentials: true };
+const corsOptions = { origin: process.env.FRONTEND, credentials: true };
 
 app.use(cors(corsOptions));
 
