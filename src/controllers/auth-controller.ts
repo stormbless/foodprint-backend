@@ -1,4 +1,4 @@
-import type { Request, Response } from 'express';
+import type { CookieOptions, Request, Response } from 'express';
 import ms from 'ms';
 
 import cronometerService from '../services/cronometer-service.js';
@@ -31,6 +31,26 @@ function userDetailsValid(userEmail: string, userPassword: string): boolean {
   }
 
   return true;
+}
+
+function getCookieOptions(exp: string): CookieOptions {
+  const cookie = { 
+    maxAge: ms(exp as ms.StringValue),
+    httpOnly: true, 
+    sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax' as 'none' | 'lax',
+    secure: process.env.NODE_ENV === 'production', 
+    path: '/' 
+  }
+
+  return cookie;
+}
+
+function getAccessCookieOptions(): CookieOptions {
+  return getCookieOptions(process.env.ACCESS_TOKEN_EXP as string);
+}
+
+function getRefreshCookieOptions(): CookieOptions {
+  return getCookieOptions(process.env.ACCESS_TOKEN_EXP as string);
 }
 
 //..................PUBLIC METHODS............
@@ -82,21 +102,8 @@ async function login(req: Request, res: Response) {
     // send cookie, userEmail and list of foods to frontend 
     // food impacts used in substitution page in frontend
     return res
-      .cookie('access_token', accessToken, { 
-        maxAge: ms(process.env.ACCESS_TOKEN_EXP as ms.StringValue),
-        httpOnly: true, 
-        // may need to make this 'none' if in production (secure:true + sameSite: 'lax' might not work with all frontend requests)
-        // -> process.env.NODE_ENV === 'production' ? 'none' : 'lax'
-        sameSite: 'lax',
-        secure: process.env.NODE_ENV === 'production', 
-        path: '/' })
-      .cookie('refresh_token', refreshToken, {
-        maxAge: ms(process.env.REFRESH_TOKEN_EXP as ms.StringValue),
-        httpOnly: true, 
-        sameSite: 'lax',
-        secure: process.env.NODE_ENV === 'production', 
-        path: '/' 
-      })
+      .cookie('access_token', accessToken, getAccessCookieOptions())
+      .cookie('refresh_token', refreshToken, getRefreshCookieOptions())
       .status(200).send({ userEmail: userEmail, foodImpactsPerKg: foodImpactsPerKg })
   } catch (error) {
     console.error(error);
@@ -112,21 +119,8 @@ async function refreshToken(req: Request, res: Response) {
   res
     .clearCookie('access_token')
     .clearCookie('refresh_token')
-    .cookie('access_token', accessToken, { 
-      maxAge: ms(process.env.ACCESS_TOKEN_EXP as ms.StringValue),
-      httpOnly: true, 
-      // may need to make this 'none' if in production (secure:true + sameSite: 'lax' might not work with all frontend requests)
-      // -> process.env.NODE_ENV === 'production' ? 'none' : 'lax'
-      sameSite: 'lax',
-      secure: process.env.NODE_ENV === 'production', 
-      path: '/' })
-    .cookie('refresh_token', refreshToken, {
-      maxAge: ms(process.env.REFRESH_TOKEN_EXP as ms.StringValue),
-      httpOnly: true, 
-      sameSite: 'lax',
-      secure: process.env.NODE_ENV === 'production', 
-      path: '/' 
-    })
+    .cookie('access_token', accessToken, getAccessCookieOptions())
+    .cookie('refresh_token', refreshToken, getRefreshCookieOptions())
     .status(200).send();
 }
 
