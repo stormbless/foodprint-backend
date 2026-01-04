@@ -2,7 +2,21 @@ import type { Request, Response } from 'express';
 
 import FoodEntryModel from '../models/FoodEntryModel.js';
 import impactCalcService from '../services/impact-calc-service.js';
-import gradeService from '../services/grade-service.js';
+
+interface FoodEntry {
+  userEmail: string,
+  date: Date,
+  servings: ServingImpact[]
+}
+
+interface ServingImpact {
+  food: string,
+  amount: number,
+  emissions: number,
+  waterUse: number,
+  landUse: number,
+  eutrophication: number
+}
 
 //..................PRIVATE METHODS............
 
@@ -39,8 +53,7 @@ function inputValid(userEmail: string, startDate: string, endDate: string): bool
 //..................PUBLIC METHODS............
 
 
-
-async function getImpactSummary(req: Request, res: Response) {
+async function getDashboardData(req: Request, res: Response) {
   try {
     const userEmail: string = req.query.userEmail as string; 
     const startDate: string = req.query.startDate as string;
@@ -50,76 +63,25 @@ async function getImpactSummary(req: Request, res: Response) {
       console.log('input invalid');
       return res.status(500).send('input invalid');
     }
+
+    
     console.time('getFoodEntries');
-    const foodEntries = await FoodEntryModel.getFoodEntries(userEmail, startDate, endDate);
+    const foodEntries: FoodEntry[] = await FoodEntryModel.getFoodEntries(userEmail, startDate, endDate);
     console.timeEnd('getFoodEntries');
 
     if (foodEntries.length === 0 ) { return res.status(204).send(); }
 
-    const totalImpact = impactCalcService.calcTotalImpact(foodEntries);
-    const avgImpact = impactCalcService.calcAvgImpact(foodEntries.length);
-    const percentageOfAvg = impactCalcService.calcPercentageOfAvg(totalImpact, avgImpact);
-    const grades = gradeService.calcGrades(percentageOfAvg);
-
-    const impactSummary = {
-      totalImpact,
-      avgImpact,
-      percentageOfAvg,
-      grades
-    };
-
-    return res.status(200).send(impactSummary);
-  } catch (error) {
-    console.error(error);
-    return res.status(500).send('internal server error');
-  }
-}
-
-async function getFoodImpacts(req: Request, res: Response) {
-  try {
-    const userEmail: string = req.query.userEmail as string; 
-    const startDate: string = req.query.startDate as string;
-    const endDate: string = req.query.endDate as string;
-
-    if (!inputValid(userEmail, startDate, endDate)) {
-      console.log('input invalid');
-      return res.status(500).send('input invalid');
-    }
-    console.time('getFoodEntries');
-    const foodEntries = await FoodEntryModel.getFoodEntries(userEmail, startDate, endDate);
-    console.timeEnd('getFoodEntries');
-
-    if (foodEntries.length === 0 ) { return res.status(204).send(); }
-
+    const impactSummary = impactCalcService.calcImpactSummary(foodEntries);
     const foodImpacts = impactCalcService.calcFoodImpacts(foodEntries);
-
-    return res.status(200).send(foodImpacts);
-  } catch (error) {
-    console.error(error);
-    return res.status(500).send('internal server error');
-  }
-}
-
-async function getImpactOverTime(req: Request, res: Response) {
-  try {
-    const userEmail: string = req.query.userEmail as string; 
-    const startDate: string = req.query.startDate as string;
-    const endDate: string = req.query.endDate as string;
-
-    if (!inputValid(userEmail, startDate, endDate)) {
-      console.log('input invalid');
-      return res.status(500).send('input invalid');
-    }
-    console.time('getFoodEntries');
-    const foodEntries = await FoodEntryModel.getFoodEntries(userEmail, startDate, endDate);
-    console.timeEnd('getFoodEntries');
-
-    if (foodEntries.length === 0 ) { return res.status(204).send(); }
-
     const impactOverTime = impactCalcService.calcImpactOverTime(foodEntries);
 
-    // send impact over time data => [{date, emissions, waterUse, landUse, eutrophication}, {...}, ...]
-    return res.status(200).send(impactOverTime);
+    const dashboardData = {
+      impactSummary,
+      foodImpacts,
+      impactOverTime
+    }
+
+    return res.status(200).send(dashboardData);
   } catch (error) {
     console.error(error);
     return res.status(500).send('internal server error');
@@ -127,7 +89,5 @@ async function getImpactOverTime(req: Request, res: Response) {
 }
 
 export default {
-  getImpactSummary,
-  getFoodImpacts,
-  getImpactOverTime
+  getDashboardData
 };

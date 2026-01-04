@@ -50,7 +50,7 @@ function getAccessCookieOptions(): CookieOptions {
 }
 
 function getRefreshCookieOptions(): CookieOptions {
-  return getCookieOptions(process.env.ACCESS_TOKEN_EXP as string);
+  return getCookieOptions(process.env.REFRESH_TOKEN_EXP as string);
 }
 
 //..................PUBLIC METHODS............
@@ -99,7 +99,7 @@ async function login(req: Request, res: Response) {
     const refreshToken = authMiddleware.generateRefreshToken(userEmail);
 
     console.timeEnd('login');
-    // send cookie, userEmail and list of foods to frontend 
+    // send cookies, userEmail and list of foods (cached in frontend for performance) to frontend 
     // food impacts used in substitution page in frontend
     return res
       .cookie('access_token', accessToken, getAccessCookieOptions())

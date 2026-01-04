@@ -6,11 +6,8 @@ import authMiddleware from '../middlewares/auth.js';
 
 const router = express.Router();
 
-router.get('/api/impact-over-time', authMiddleware.authenticateAccessToken, impactController.getImpactOverTime);
-router.get('/api/impact-summary', authMiddleware.authenticateAccessToken, impactController.getImpactSummary);
-router.get('/api/food-impacts', authMiddleware.authenticateAccessToken, impactController.getFoodImpacts);
 
-
+router.get('/api/dashboard-data', authMiddleware.authenticateAccessToken, impactController.getDashboardData);
 
 
 export default router;

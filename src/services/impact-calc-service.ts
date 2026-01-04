@@ -1,4 +1,5 @@
 import AVERAGE_DIET_IMPACT from "../constants/average-diet-impact.js"
+import gradeService from "./grade-service.js"
 
 interface FoodEntry {
   userEmail: string,
@@ -42,51 +43,8 @@ interface FoodImpact {
   totalImpact: number
 }
 
-// calculate total impact relative to average diet (includes all metrics)
-function calcRelativeTotalImpact(emissions: number, waterUse: number, landUse: number, eutrophication: number): number {
-  // weight each metric equally (25% of relative impact each)
-  const relativeEmissions = 0.25 * emissions / AVERAGE_DIET_IMPACT.emissionsPerDay;
-  const relativeWaterUse = 0.25 * waterUse / AVERAGE_DIET_IMPACT.waterUsePerDay;
-  const relativeLandUse = 0.25 * landUse / AVERAGE_DIET_IMPACT.landUsePerDay;
-  const relativeEutrophication = 0.25 * eutrophication / AVERAGE_DIET_IMPACT.eutrophicationPerDay;
-    
-  const relativeImpact = relativeEmissions + relativeWaterUse + relativeLandUse + relativeEutrophication;
+//..................PRIVATE METHODS............
 
-  return relativeImpact;
-}
-
-// calculates impact over time for each env metric using user's food entries
-// takes an array of foodEntries and
-// returns an array of date impact objects 
-function calcImpactOverTime(foodEntries: FoodEntry[]): DateImpact[] {
-  // for each foodEntry (each has unique date)
-  // create impact object with properties: date, emissions, waterUse, landUse and eutrophication
-  const impactOverTime: DateImpact[] = foodEntries.map((foodEntry) => {
-    let emissions = 0;
-    let waterUse = 0;
-    let landUse = 0;
-    let eutrophication = 0;
-
-    // sum env metrics for each food entered on the date
-    for (let serving of foodEntry.servings) {
-      emissions += serving.emissions;
-      waterUse += serving.waterUse;
-      landUse += serving.landUse;
-      eutrophication += serving.eutrophication;
-    }
-    return {
-      date: foodEntry.date,
-      emissions,
-      waterUse,
-      landUse,
-      eutrophication,
-      total: calcRelativeTotalImpact(emissions, waterUse, landUse, eutrophication)
-    }
-  })
-  
-  return impactOverTime;
-
-}
 
 // calculates total impact for each env metric using user's food entries
 // takes an array of foodEntries and
@@ -189,6 +147,41 @@ function calcFoodImpact(targetFood: string, foodEntries: FoodEntry[]): FoodImpac
   return foodImpact;
 }
 
+
+
+//..................PUBLIC METHODS............
+
+
+
+// calculate total impact relative to average diet (includes all metrics)
+function calcRelativeTotalImpact(emissions: number, waterUse: number, landUse: number, eutrophication: number): number {
+  // weight each metric equally (25% of relative impact each)
+  const relativeEmissions = 0.25 * emissions / AVERAGE_DIET_IMPACT.emissionsPerDay;
+  const relativeWaterUse = 0.25 * waterUse / AVERAGE_DIET_IMPACT.waterUsePerDay;
+  const relativeLandUse = 0.25 * landUse / AVERAGE_DIET_IMPACT.landUsePerDay;
+  const relativeEutrophication = 0.25 * eutrophication / AVERAGE_DIET_IMPACT.eutrophicationPerDay;
+    
+  const relativeImpact = relativeEmissions + relativeWaterUse + relativeLandUse + relativeEutrophication;
+
+  return relativeImpact;
+}
+
+function calcImpactSummary(foodEntries: FoodEntry[]) {
+  const totalImpact = calcTotalImpact(foodEntries);
+  const avgImpact = calcAvgImpact(foodEntries.length);
+  const percentageOfAvg = calcPercentageOfAvg(totalImpact, avgImpact);
+  const grades = gradeService.calcGrades(percentageOfAvg);
+
+  const impactSummary = {
+    totalImpact,
+    avgImpact,
+    percentageOfAvg,
+    grades
+  };
+
+  return impactSummary;
+}
+
 // calculate impact (all metrics + total) for all foods in food entries
 function calcFoodImpacts(foodEntries: FoodEntry[]): FoodImpact[] {
   // get list of unique foods in foodEntries
@@ -213,11 +206,42 @@ function calcFoodImpacts(foodEntries: FoodEntry[]): FoodImpact[] {
   return foodImpacts;
 }
 
+// calculates impact over time for each env metric using user's food entries
+// takes an array of foodEntries and
+// returns an array of date impact objects 
+function calcImpactOverTime(foodEntries: FoodEntry[]): DateImpact[] {
+  // for each foodEntry (each has unique date)
+  // create impact object with properties: date, emissions, waterUse, landUse and eutrophication
+  const impactOverTime: DateImpact[] = foodEntries.map((foodEntry) => {
+    let emissions = 0;
+    let waterUse = 0;
+    let landUse = 0;
+    let eutrophication = 0;
+
+    // sum env metrics for each food entered on the date
+    for (let serving of foodEntry.servings) {
+      emissions += serving.emissions;
+      waterUse += serving.waterUse;
+      landUse += serving.landUse;
+      eutrophication += serving.eutrophication;
+    }
+    return {
+      date: foodEntry.date,
+      emissions,
+      waterUse,
+      landUse,
+      eutrophication,
+      total: calcRelativeTotalImpact(emissions, waterUse, landUse, eutrophication)
+    }
+  })
+  
+  return impactOverTime;
+
+}
+
 export default {
   calcRelativeTotalImpact,
+  calcImpactSummary,
   calcImpactOverTime,
-  calcTotalImpact,
-  calcAvgImpact,
-  calcPercentageOfAvg,
   calcFoodImpacts
 };

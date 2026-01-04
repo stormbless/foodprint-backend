@@ -6,7 +6,7 @@ interface Impact {
   total: number
 }
 
-interface Grades {
+export interface Grades {
   emissionsGrade: string,
   waterUseGrade: string,
   landUseGrade: string,
