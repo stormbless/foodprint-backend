@@ -13,7 +13,7 @@ RUN npm install
 # rm -rf reduces package lists to reduce image size
 # -y automatically answers yes to any confirmation prompts during the installation process
 # install venc -> module for virtual environment for python 3.12
-RUN apt-get update && apt-get install -y python3.11 python3-pip && python3.11-venv && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y python3.11 python3-pip python3.11-venv && rm -rf /var/lib/apt/lists/*
 
 # Create a virtual environment for python and set PATH to use it for Python packages
 # Avoid conflicts with system packages
