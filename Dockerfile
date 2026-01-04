@@ -10,9 +10,9 @@ RUN npm install
 
 # Install python and pip 
 # Wearipedia package used to access cronometer requires python version 3.10 - 3.12 to work properly
-# rm -rf removes files and directories from the path provided
+# rm -rf reduces package lists to reduce image size
 # -y automatically answers yes to any confirmation prompts during the installation process
-RUN apt-get update && apt-get install -y python3.12 python3.12-pip && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y python3.12 python3-pip && rm -rf /var/lib/apt/lists/*
 
 # Python script requires wearipedia package to be installed (all others used are native packages)
 RUN pip install --no-cache-dir wearipedia
