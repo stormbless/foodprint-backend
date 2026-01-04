@@ -12,7 +12,13 @@ RUN npm install
 # Wearipedia package used to access cronometer requires python version 3.10 - 3.12 to work properly
 # rm -rf reduces package lists to reduce image size
 # -y automatically answers yes to any confirmation prompts during the installation process
-RUN apt-get update && apt-get install -y python3.11 python3-pip && rm -rf /var/lib/apt/lists/*
+# install venc -> module for virtual environment for python 3.12
+RUN apt-get update && apt-get install -y python3.11 python3-pip && python3.12-venv && rm -rf /var/lib/apt/lists/*
+
+# Create a virtual environment for python and set PATH to use it for Python packages
+# Avoid conflicts with system packages
+RUN python3.12 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
 
 # Python script requires wearipedia package to be installed (all others used are native packages)
 RUN pip install --no-cache-dir wearipedia
