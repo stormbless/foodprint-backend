@@ -24,7 +24,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 RUN pip install --no-cache-dir wearipedia
 
 # Wearipedia is for some reason mising two import statements in cronometer_fetch.py, so need to add them
-ENV NEW_LINES="import re\\import pandas as pd\\n"
+ENV NEW_LINES="import re\\nimport pandas as pd\\n"
 ENV TARGET_FILE="/opt/venv/lib/python3.11/site-packages/wearipedia/devices/cronometer/cronometer_fetch.py"
 
 RUN sed -i "1i\\$NEW_LINES" "$TARGET_FILE"
