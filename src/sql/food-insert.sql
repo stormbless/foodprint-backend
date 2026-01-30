@@ -4,4 +4,4 @@ FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 16 ROWS
-(name, category, emissions, water_use, land_use, eutrophication);
+(food_id, name, category, emissions, water_use, land_use, eutrophication);
