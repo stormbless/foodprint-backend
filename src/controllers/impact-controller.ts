@@ -55,7 +55,7 @@ function inputValid(userEmail: string, startDate: string, endDate: string): bool
 
 async function getDashboardData(req: Request, res: Response) {
   try {
-    const userEmail: string = req.query.userEmail as string; 
+    const userEmail: string = req.userEmail as string;
     const startDate: string = req.query.startDate as string;
     const endDate: string = req.query.endDate as string;
 
