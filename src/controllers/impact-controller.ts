@@ -38,7 +38,7 @@ function inputValid(startDate: string, endDate: string): boolean {
     return false;
   }
 
-  if (startDate <= endDate) {
+  if (startDate > endDate) {
     return false;
   }
   
