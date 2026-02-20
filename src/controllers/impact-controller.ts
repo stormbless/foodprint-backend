@@ -20,17 +20,9 @@ interface ServingImpact {
 
 //..................PRIVATE METHODS............
 
-function inputValid(userEmail: string, startDate: string, endDate: string): boolean {
-  const isEmail: RegExp = /^\S+@\S+\.\S+$/;
+function inputValid(startDate: string, endDate: string): boolean {
   // YYYY-MM-DD
   const validDate: RegExp = /^([0-9]{4})-(0[1-9]|1[0-2]|[1-9])-([1-9]|0[1-9]|[1-2]\d|3[0-1])$/;
-
-  if (!userEmail) {
-    return false;
-  }
-  if (!isEmail.test(userEmail)) {
-    return false;
-  }
 
   if (!startDate) {
     return false;
@@ -45,8 +37,11 @@ function inputValid(userEmail: string, startDate: string, endDate: string): bool
   if (!validDate.test(endDate)) {
     return false;
   }
-  
 
+  if (startDate <= endDate) {
+    return false;
+  }
+  
   return true;
 }
 
@@ -59,7 +54,7 @@ async function getDashboardData(req: Request, res: Response) {
     const startDate: string = req.query.startDate as string;
     const endDate: string = req.query.endDate as string;
 
-    if (!inputValid(userEmail, startDate, endDate)) {
+    if (!inputValid(startDate, endDate)) {
       console.log('input invalid');
       return res.status(500).send('input invalid');
     }
