@@ -8,15 +8,15 @@ import FoodModel from '../models/FoodModel.js'
 
 import authMiddleware from '../middlewares/auth.js';
 
+import validator from 'validator';
+
 //..................PRIVATE METHODS............
 
 function userDetailsValid(userEmail: string, userPassword: string): boolean {
-  const isEmail: RegExp = /^\S+@\S+\.\S+$/;
-
   if (!userEmail) {
     return false;
   }
-  if (!isEmail.test(userEmail)) {
+  if (!validator.isEmail(userEmail)) {
     return false;
   }
   
@@ -31,6 +31,15 @@ function userDetailsValid(userEmail: string, userPassword: string): boolean {
   }
 
   return true;
+}
+
+// not normalized because cronometer uses exact email entered when signing up to cronometer
+// if normalize email, logging in will not work with say john.smith@gmail.com for example
+function cleanEmail(email: string): string {
+  const trimmedEmail = email.trim();
+  const cleanedEmail = validator.escape(trimmedEmail) as string;
+  
+  return cleanedEmail;
 }
 
 function getCookieOptions(exp: string): CookieOptions {
@@ -65,19 +74,21 @@ async function login(req: Request, res: Response) {
       console.log('userDetails invalid');
       return res.status(500).send('userDetails invalid');
     }
+
+    const cleanedEmail: string = cleanEmail(userEmail);
     
     try {
       console.time('fetchServings');
-      const servings = await cronometerService.fetchServings(userEmail, userPassword);
+      const servings = await cronometerService.fetchServings(cleanedEmail, userPassword);
       console.timeEnd('fetchServings');
 
       console.time('transform servings');
-      const foodEntries = await transformationService.transformServingstoFoodEntries(userEmail, servings);
+      const foodEntries = await transformationService.transformServingstoFoodEntries(cleanedEmail, servings);
       console.timeEnd('transform servings');
 
       // reset user's food entries (clear them and then insert updated ones)
       console.time('deleteFoodEntries');
-      await FoodEntryModel.deleteFoodEntries({ userEmail: userEmail });
+      await FoodEntryModel.deleteFoodEntries({ userEmail: cleanedEmail });
       console.timeEnd('deleteFoodEntries');
 
       console.time('insertFoodEntries');
@@ -95,8 +106,8 @@ async function login(req: Request, res: Response) {
     const foodImpactsPerKg = await FoodModel.getAllFoodsImpactPerKg();
     console.timeEnd('getAllImpacts');
     
-    const accessToken = authMiddleware.generateAccessToken(userEmail);
-    const refreshToken = authMiddleware.generateRefreshToken(userEmail);
+    const accessToken = authMiddleware.generateAccessToken(cleanedEmail);
+    const refreshToken = authMiddleware.generateRefreshToken(cleanedEmail);
 
     console.timeEnd('login');
     // send cookies, userEmail and list of foods (cached in frontend for performance) to frontend 
@@ -104,7 +115,7 @@ async function login(req: Request, res: Response) {
     return res
       .cookie('access_token', accessToken, getAccessCookieOptions())
       .cookie('refresh_token', refreshToken, getRefreshCookieOptions())
-      .status(200).send({ userEmail: userEmail, foodImpactsPerKg: foodImpactsPerKg })
+      .status(200).send({ userEmail: cleanedEmail, foodImpactsPerKg: foodImpactsPerKg })
   } catch (error) {
     console.error(error);
     return res.status(500).send('internal server error');
