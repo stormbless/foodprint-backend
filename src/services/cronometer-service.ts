@@ -38,6 +38,9 @@ async function fetchServings(userEmail: string, userPassword: string): Promise<S
         if (!(typeof serving.amount === 'number')) {
           reject('servings form invalid (invalid amount form)');
         }
+        if (Object.keys(serving).length !== 3) {
+          reject('servings form invalid (more or less than 3 keys)');
+        }
         
       }
       resolve(servings);
