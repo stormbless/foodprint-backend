@@ -44,6 +44,7 @@ function cleanEmail(email: string): string {
 
 function getCookieOptions(exp: string): CookieOptions {
   const cookie = { 
+    domain: process.env.COOKIE_DOMAIN,
     maxAge: ms(exp as ms.StringValue),
     httpOnly: true, 
     sameSite: process.env.NODE_ENV === 'production' ? 'strict' : 'lax' as 'strict' | 'lax',
