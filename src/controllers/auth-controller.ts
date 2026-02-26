@@ -46,7 +46,7 @@ function getCookieOptions(exp: string): CookieOptions {
   const cookie = { 
     maxAge: ms(exp as ms.StringValue),
     httpOnly: true, 
-    sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax' as 'none' | 'lax',
+    sameSite: process.env.NODE_ENV === 'production' ? 'strict' : 'lax' as 'strict' | 'lax',
     secure: process.env.NODE_ENV === 'production', 
     path: '/' 
   }
